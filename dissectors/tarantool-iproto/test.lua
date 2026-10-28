@@ -1,9 +1,8 @@
+#!/usr/bin/env tarantool
 -- SPDX-License-Identifier: GPL-3.0-or-later
 -- Importé de https://github.com/mikhainin/tarantool-dissector (dépôt archivé),
 -- commit c3bcd830b24c44de0ddd3364bae74958721c50ba du 16/12/2021.
 -- Licence d'origine : BSD-2-Clause (LICENSE.txt amont) — voir README.md.
-#!/usr/bin/env tarantool
-
 -- Lua script that uses Tarantool Lua API and produce
 -- IProto network packets for testing Wireshark dissector.
 --
