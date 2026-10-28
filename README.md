@@ -3,6 +3,12 @@
 Collection de dissecteurs Wireshark en Lua, repris (imports documentés,
 issue par issue) de dépôts tiers listés dans les [issues « dissecteur »](https://github.com/Mathilde-Team/wireshark-lua/issues?q=label%3Adissecteur).
 
+## Structure
+
+Un sous-dossier par dissecteur dans `dissectors/<protocole>/` : les fichiers
+Lua importés tels quels de l'amont (en-tête SPDX + provenance ajouté), plus
+un `README.md` d'import (source, commit, licence amont, utilisation).
+
 ## Licence
 
 [GPL-3.0-or-later](LICENSE) — Wireshark lui-même est en GPL-2.0-or-later,
