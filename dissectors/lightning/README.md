@@ -53,10 +53,14 @@ rocks externes ne sont pas inclus. Pour une installation fonctionnelle,
 utiliser le dépôt amont (README amont, Lua 5.2 + luarocks) :
 
 ```bash
-git clone https://github.com/nayutaco/lightning-dissector
+git clone --recurse-submodules https://github.com/nayutaco/lightning-dissector
 cd lightning-dissector
 luarocks install lightning-dissector-scm-1.rockspec
 ```
+
+(Le rockspec référence les fichiers du sous-module `plc` : un clone simple
+sans `--recurse-submodules` — ou sans `git submodule update --init` — ne
+permet pas l'installation.)
 
 Puis configurer Wireshark pour charger le module (dossier `plugins` ou
 `init.lua`) et fournir un keylog de nœud (c-lightning hsm_secret, Eclair,
