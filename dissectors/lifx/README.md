@@ -1,9 +1,6 @@
-# LIFX (LAN Protocol)
+# LIFX LAN (ampoules connectées)
 
-Dissecteur Wireshark Lua pour le LIFX LAN Protocol (ampoules et
-périphériques LIFX) : il décode l'en-tête de trame, l'adresse de trame,
-l'en-tête de protocole et les charges utiles des messages (état du service,
-informations hôte/wifi, alimentation, couleur, infrarouge, tuiles…).
+Dissecteur Wireshark Lua pour le protocole LAN des ampoules connectées LIFX : messages Set/State, attaches sur le port UDP 56700 (port par défaut des lampes LIFX).
 
 ## Import
 
@@ -11,31 +8,24 @@ informations hôte/wifi, alimentation, couleur, infrarouge, tuiles…).
 |---|---|
 | Dépôt amont | https://github.com/mab5vot9us9a/WiresharkLIFXDissector |
 | Commit importé | `cf3a97bd777426fbf561baf71b48ee18b58334b1` du 24/02/2018 (branche `master`) |
-| Licence amont | GPL-3.0 (fichier `LICENSE` amont) — compatible avec la licence du dépôt (GPL-3.0-or-later) |
-| Natif Wireshark 4.6.4 | Non — aucun dissector LIFX natif dans Wireshark (`packet-lifx.c` absent de l'arborescence amont) |
+| Licence amont | GPLv3 (README et fichier `LICENSE`) — sans clause « or later » |
+| Natif Wireshark 4.6.4 | Non — aucun dissecteur LIFX natif dans Wireshark |
 
-Texte complet de la licence amont : fichier `LICENSE` de ce dossier (copie
-conforme de l'amont).
+Texte complet de la licence amont : fichier `LICENSE.txt` de ce dossier (copie conforme de l'amont).
 
 ## Fichiers
 
 | Fichier | Rôle |
 |---|---|
-| `src/lifx.lua` | Dissecteur LIFX LAN Protocol : s'attache au port UDP 56700 (port par défaut des ampoules LIFX), décode trame, adresse, en-tête de protocole et charges utiles (messages device, light, infrarouge, tuiles…) |
+| `src/lifx.lua` | Dissecteur (50 Ko) : en-tête LIFX, messages Set/State et types du protocole LAN |
 
-Le dépôt amont contient aussi `README.md` et `.gitignore` : non importés
-ici (le dépôt ne collecte que les scripts Lua).
+Non importés : `README.md` (documentation, reprise ici), `.gitignore`.
 
 ## Utilisation
 
-Copier `src/lifx.lua` dans le dossier `plugins` de Wireshark (ex.
-`~/.local/lib/wireshark/plugins` sous Linux), puis capturer le trafic UDP
-port 56700. Les filtres d'affichage pour Set/State et Get sont documentés
-dans l'en-tête du fichier.
+Copier `src/lifx.lua` dans le dossier `plugins` de Wireshark (ex. `~/.config/wireshark/plugins/`), puis redémarrer Wireshark. Le dissecteur s'attache à l'UDP 56700. Filtres utiles : `lifx.type` pour les messages Set/State (voir commentaires en tête du fichier).
 
 ## Limites constatées à l'import
 
-- testé par l'auteur avec Wireshark 2.4.3 (2017) ; les messages les plus
-  récents du protocole LIFX (postérieurs à 2018) ne sont pas couverts ;
-- le dissecteur couvre les « Tile Messages » ajoutés juste avant le
-  dernier commit amont (février 2018).
+- non maintenu depuis 2018, testé contre Wireshark 2.4.3 par son auteur ;
+- couvre la partie LAN du protocole (port 56700) ; pas de gestion du mode broadcast sur d'autres ports.
