@@ -1,7 +1,8 @@
--- SPDX-License-Identifier: GPL-3.0
+-- SPDX-License-Identifier: GPL-3.0-only
 -- Importé de https://github.com/mab5vot9us9a/WiresharkLIFXDissector,
 -- commit cf3a97bd777426fbf561baf71b48ee18b58334b1 du 24/02/2018.
--- Licence amont : GPL-3.0 — voir README.md.
+-- Licence amont : GPLv3 (README et LICENSE amont) — voir README.md.
+
 -- Author: Maurice Fahn
 -- Created: 2017-12-04
 --
