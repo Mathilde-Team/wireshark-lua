@@ -11,6 +11,8 @@ Dissecteur Wireshark pour les frappes envoyées par les périphériques BadUSB (
 | Licence amont | MIT |
 | Natif Wireshark 4.6.4 | Non — il s'agit de frappes clavier ; le dissecteur USB HID natif existe mais n'affiche pas les touches décodées |
 
+Texte complet de la licence amont : fichier `LICENSE` de ce dossier (copie conforme de l'amont).
+
 ## Fichiers
 
 | Fichier | Rôle |

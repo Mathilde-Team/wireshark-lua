@@ -22,6 +22,8 @@ conservée (`src/parsers/`, `src/types/` chargés par chemin relatif) ; seule un
 en-tête `SPDX-License-Identifier: MIT` avec la provenance est ajoutée
 (convention du dépôt, issue #563).
 
+Texte complet de la licence amont : fichier `LICENSE` de ce dossier (copie conforme de l'amont).
+
 ## Fichiers
 
 - `src/ari.lua` — dissecteur principal (en-tête ARI, délégation TLV) ;

@@ -13,6 +13,8 @@ Dissecteur Wireshark Lua pour le protocole de tunnel WireGuard : messages de han
 | Licence amont | GPLv2 (ou toute version ultérieure), selon l'en-tête de `wg.lua` |
 | Natif Wireshark 4.6.4 | Oui — un dissecteur WireGuard amélioré est inclus depuis Wireshark 3.0 |
 
+Texte complet de la licence amont : fichier `LICENSE.txt` de ce dossier (copie conforme de l'amont).
+
 ## Fichiers
 
 | Fichier | Rôle |
