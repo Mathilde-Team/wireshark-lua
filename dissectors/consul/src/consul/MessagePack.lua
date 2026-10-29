@@ -1,7 +1,8 @@
--- SPDX-License-Identifier: Apache-2.0
+-- SPDX-License-Identifier: MIT
 -- Importé de https://github.com/blake/wireshark-consul-dissector,
--- commit fb7e81872ee5c27476b9af7db75bac94c51f6588 du 27/07/2023.
--- Licence amont : Apache-2.0 — voir README.md et LICENSE.txt.
+-- commit fb7e81872ee5c27476b9af7db75bac94c51f6588 du 27/07/2023,
+-- fichier lui-même repris de lua-MessagePack de Francois Perrad
+-- (© 2012-2019, MIT/X11, mention dans le fichier) — voir README.md.
 
 --
 -- lua-MessagePack : <https://fperrad.frama.io/lua-MessagePack/>

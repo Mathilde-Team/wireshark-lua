@@ -7,8 +7,8 @@ Dissecteur Wireshark Lua pour HashiCorp Consul et Yamux : communication RPC (TLS
 | | |
 |---|---|
 | Dépôt amont | https://github.com/blake/wireshark-consul-dissector |
-| Commit importé | `fb7e81872ee5c27476b9af7db75bac94c51f6588` du 27/07/2023 (branche `master`) |
-| Licence amont | Apache-2.0 (fichier `LICENSE`) |
+| Commit importé | `fb7e81872ee5c27476b9af7db75bac94c51f6588` du 27/07/2023 (branche `main`) |
+| Licence amont | Apache-2.0 (fichier `LICENSE`) ; exception : `src/consul/MessagePack.lua` est MIT (lua-MessagePack, © 2012-2019 Francois Perrad, mention dans le fichier) |
 | Natif Wireshark 4.6.4 | Non — aucun dissecteur Consul/Yamux natif dans Wireshark |
 
 Texte complet de la licence amont : fichier `LICENSE.txt` de ce dossier (copie conforme de l'amont).
