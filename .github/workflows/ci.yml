@@ -1,0 +1,40 @@
+name: CI
+
+# Issue #579 : job « Qualité » (SOCLE.md §CI) — validation des imports de
+# dissecteurs (convention #563) et tests du validateur.
+
+"on":
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  qualite:
+    name: "Qualité (validation des imports)"
+    runs-on: ${{ fromJSON(vars.RUNS_ON_LINUX || '{"group":"maison","labels":["self-hosted","linux"]}') }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Compilateur Lua 5.4 (vérification de syntaxe, optionnel)
+        # Wireshark 4.4+ embarque Lua 5.3/5.4 uniquement : on vérifie la
+        # syntaxe avec luac 5.4 (le luac par défaut du runner peut être 5.1).
+        run: |
+          if ! command -v luac5.4 >/dev/null 2>&1; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq lua5.4 || true
+          fi
+
+      - name: Validation des imports
+        run: python3 scripts/valider_imports.py
+
+      - name: Tests du validateur
+        run: python3 -m unittest discover -s tests -v
