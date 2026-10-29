@@ -48,12 +48,21 @@ documentée dans le README amont (Lua 5.2 + luarocks).
 
 ## Utilisation
 
-Installation par luarocks (Lua 5.2, cf. README amont) :
+Cet import est une archive documentaire : le rockspec et les dépendances
+rocks externes ne sont pas inclus. Pour une installation fonctionnelle,
+utiliser le dépôt amont (README amont, Lua 5.2 + luarocks) :
 
 ```bash
+git clone https://github.com/nayutaco/lightning-dissector
+cd lightning-dissector
 luarocks install lightning-dissector-scm-1.rockspec
 ```
 
 Puis configurer Wireshark pour charger le module (dossier `plugins` ou
 `init.lua`) et fournir un keylog de nœud (c-lightning hsm_secret, Eclair,
 LND) pour déchiffrer les charges utiles.
+
+À noter : la syntaxe Lua 5.4 des fichiers importés est validée, mais le
+fonctionnement de l'ensemble n'est pas établi — le rockspec amont exige
+Lua 5.2 et des rocks externes (`compat53`, `middleclass`, `plc52`…, cf.
+ci-dessus), non testés ici.
