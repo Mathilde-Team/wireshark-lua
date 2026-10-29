@@ -22,8 +22,12 @@ Texte complet de la licence amont : fichier `LICENSE.txt` de ce dossier (copie c
 | `src/consul/` | Dissecteur principal (`consul.lua`), RPC TLS/gRPC/Raft/snapshot/gossip, MessagePack, utilitaires |
 | `src/yamux/yamux.lua` | Multiplexage Yamux |
 | `src/serf/serf.lua` | Protocole gossip Serf |
+| `tests/test_decode.lua`, `tests/test_utils.lua` | tests amont (luaunit) |
+| `tests/tshark_tests/` | données des tests amont : sources txt, résultats attendus JSON, script de génération des PCAP (bash) |
 
-Non importés : `tests/` (tests Lua), `img/`, `docs/`, `README.md`.
+Non importés : `img/`, `docs/`, `README.md`, `.gitignore`. Les tests exigent
+luaunit, tshark et text2pcap (`tests/README.md` amont) ; leurs données
+(`tshark_tests/`) sont importées pour rester utilisables.
 
 ## Utilisation
 
