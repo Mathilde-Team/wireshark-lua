@@ -19,7 +19,7 @@ Texte complet de la licence amont : fichier `LICENSE.txt` de ce dossier (copie c
 |---|---|
 | `src/solana.lua` | Dissecteur (46 Ko) : gossip, shreds, repair, TPU UDP/QUIC, avec décodage optionnel des transactions via `mev-protos` |
 
-Non importés : `protos/*.proto` (méta-données gRPC mev-protos, sourcées du dépôt distinct [jito-labs/mev-protos]((https://github.com/jito-labs/mev-protos)), régénérables via `update_protos.sh`), `tools/` (scripts shell/Python de conversion de captures), `README.md`.
+Non importés : `protos/*.proto` (méta-données gRPC mev-protos, sourcées du dépôt distinct [jito-labs/mev-protos](https://github.com/jito-labs/mev-protos), régénérables via `update_protos.sh`), `tools/` (scripts shell/Python de conversion de captures), `README.md`.
 
 ## Utilisation
 
