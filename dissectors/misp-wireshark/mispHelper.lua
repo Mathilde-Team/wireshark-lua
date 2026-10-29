@@ -1,8 +1,9 @@
 -- SPDX-License-Identifier: LicenseRef-AGPL-2.0
 -- Importé de https://github.com/MISP/misp-wireshark,
 -- commit be6d89df62503465d9b92e6839612111ea8fc068 du 23/10/2023 (branche `main`).
--- Licence amont : Affero GPL v2, déclarée dans les métadonnées du plugin
--- (`license = "AGPLv2"`) ; l'amont ne fournit pas de fichier LICENSE — voir README.md.
+-- Licence amont : non établie — aucune mention propre dans ce fichier ; le
+-- fichier principal du projet (`misp-wireshark.lua`) déclare « AGPLv2 » dans
+-- ses métadonnées, sans fichier LICENSE à l'amont — voir README.md.
 
 
 local utils = require 'mispWiresharkUtils'
