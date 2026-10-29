@@ -20,6 +20,8 @@ Fichiers importés tels quels (aucune modification de code) ; seule une
 en-tête `SPDX-License-Identifier: MIT` avec la provenance est ajoutée
 (convention du dépôt, issue #563).
 
+Texte complet de la licence amont : fichier `LICENSE` de ce dossier (copie conforme de l'amont).
+
 ## Fichiers
 
 - `src/someip.lua` — dissecteur SOME/IP (en-tête, tables de délégation) ;

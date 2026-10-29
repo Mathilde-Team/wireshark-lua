@@ -20,6 +20,8 @@ Fichiers importés tels quels (aucune modification de code), structure amont
 conservée ; seule une en-tête `SPDX-License-Identifier: GPL-2.0-or-later` avec
 la provenance est ajoutée (convention du dépôt, issue #563).
 
+Texte complet de la licence amont : fichier `LICENSE.txt` de ce dossier (copie conforme de l'amont).
+
 ## Fichiers
 
 - `src/wirebaitlib/` (19 fichiers) — bibliothèque : API Wireshark simulée

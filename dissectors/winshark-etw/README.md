@@ -22,6 +22,8 @@ de ligne CRLF de `Microsoft_Windows_PktMon.lua`) ; seule une en-tête
 `SPDX-License-Identifier: Apache-2.0` avec la provenance est ajoutée
 (convention du dépôt, issue #563).
 
+Texte complet de la licence amont : fichier `LICENSE` de ce dossier (copie conforme de l'amont).
+
 ## Fichiers
 
 - `src/0winshark.lua` — dissecteur principal « winshark » : en-tête ETW, table
