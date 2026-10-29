@@ -9,7 +9,7 @@ Dissecteur Wireshark Lua pour le protocole NMEA 0183 sur Ethernet : phrases GPS/
 | Dépôt amont | https://github.com/kmpm/wireshark-nmea |
 | Commit importé | `6f539fc8408d3069b967a8d024908bca348cf0bb` du 04/10/2023 (branche `master`) |
 | Licence amont | Apache-2.0 (énoncée dans l'en-tête du fichier et le fichier `LICENSE`) |
-| Natif Wireshark 4.6.4 | Non — aucun dissecteur NMEA natif dans Wireshark |
+| Natif Wireshark 4.6.4 | Oui — Wireshark intègre un dissecteur natif NMEA 0183 (`packet-nmea0183.c`) ; cet import Lua reste utile pour les versions antérieures |
 
 Texte complet de la licence amont : fichier `LICENSE.txt` de ce dossier (copie conforme de l'amont).
 

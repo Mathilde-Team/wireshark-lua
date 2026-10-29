@@ -20,7 +20,7 @@ Collection de greffons Wireshark/tshark de phreakocious : colonnes L4, statistiq
 | `src/wireshark-tcpextend/TCPextend-post_dissector.lua` | Bytes in flight, bytes since push, delta par émetteur | GPL-2.0 (`LICENSE` du dossier) |
 | `src/TLSextend/TLSextend.lua` | État du handshake TLS par flux TCP (`TLSextend.state==1` : ClientHello sans ServerHello) | GPL-3.0+ (en-tête du fichier) |
 | `src/wireshark-http-extra/http_response_patcher.lua` | Méthode, URI et hôte sur chaque réponse HTTP ; URL complète | GPL-3.0 (`LICENSE.md` du dossier) |
-| `src/Lync-Skype4B-Plugin2_00.lua` | MS-TURN, ICE et RTP/RTCP pour Lync et Skype for Business (James Cussen v2.0.0) | Licence spécifique de l'auteur (redistribution sous conditions, énoncée dans l'en-tête du fichier) |
+| `src/Lync-Skype4B-Plugin2_00.lua` | MS-TURN, ICE et RTP/RTCP pour Lync et Skype for Business (James Cussen v2.0.0) | Licence spécifique de l'auteur : redistribution autorisée si copyright/conditions/disclaimer conservés (respecté : fichier importé tel quel), mais **sans usage commercial ni revente sans accord écrit** — conditions 4-5 de l'en-tête |
 
 Les greffons vendored sont les versions patchées par l'amont pour Wireshark 4.x (leur provenance d'origine est nommée en tête de chaque fichier amont).
 
