@@ -1,8 +1,7 @@
 -- SPDX-License-Identifier: Apache-2.0
 -- Importé de https://github.com/blake/wireshark-consul-dissector,
--- commit fb7e81872ee5c27476b9af7db75bac94c51f6588 du 27/07/2023 (branche `main`).
--- Licence amont : Apache-2.0 (LICENSE amont du dépôt ; ce fichier n'a pas
--- d'en-tête de licence propre) — voir README.md.
+-- commit fb7e81872ee5c27476b9af7db75bac94c51f6588 du 27/07/2023.
+-- Licence amont : Apache-2.0 — voir README.md et LICENSE.txt.
 
 --[[
 Consul Gossip/Serf dissector
