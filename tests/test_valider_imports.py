@@ -200,6 +200,18 @@ class ValiderImportsTests(unittest.TestCase):
         self.assertTrue(valider.syntaxe_valide(["true"], fichier))
         self.assertFalse(valider.syntaxe_valide(["false"], fichier))
 
+    def test_main_sans_compilateur_lua(self) -> None:
+        racine = self.racine_tmp / "sansluac"
+        rep = racine / "dissectors" / "demo"
+        rep.mkdir(parents=True)
+        self._readme(rep)
+        self._lua_valide(rep)
+        (rep / "LICENSE").write_text("MIT…", encoding="utf-8")
+        with unittest.mock.patch.object(
+            valider, "trouver_compilateur_lua", return_value=None
+        ):
+            self.assertEqual(valider.main(racine), 0)
+
     def test_main_ok(self) -> None:
         racine = self.racine_tmp / "ok"
         rep = racine / "dissectors" / "demo"
