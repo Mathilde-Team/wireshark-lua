@@ -60,13 +60,31 @@ def _rel(chemin: pathlib.Path) -> str:
         return str(chemin)
 
 
+CIBLES_LUAC = ("luac5.4", "luac5.3", "luac")
+
+
+def _version_lua(nom: str) -> str:
+    """Sortie de ``<nom> -v`` (version de Lua du compilateur)."""
+    try:
+        resultat = subprocess.run([nom, "-v"], capture_output=True, text=True)
+    except OSError:
+        return ""
+    return (resultat.stdout or "") + (resultat.stderr or "")
+
+
 def trouver_compilateur_lua() -> list[str] | None:
-    """Commande de vérification de syntaxe Lua, ou None si indisponible."""
-    for candidat in ("luac", "luac5.4", "luac5.3", "luac5.2", "luac5.1"):
-        if shutil.which(candidat):
-            return [candidat, "-p"]
-    if shutil.which("luajit"):
-        return ["luajit", "-bl"]
+    """Compilateur Lua 5.3/5.4, ou None si indisponible.
+
+    Wireshark 4.4+ embarque Lua 5.3/5.4 (installateurs : 5.4.6) et a retiré
+    le support de Lua 5.1/5.2 : vérifier la syntaxe avec un luac 5.1/5.2
+    produirait de faux échecs (opérateurs binaires natifs, etc.).
+    """
+    for nom in CIBLES_LUAC:
+        if not shutil.which(nom):
+            continue
+        version = _version_lua(nom)
+        if "5.4" in version or "5.3" in version:
+            return [nom, "-p"]
     return None
 
 

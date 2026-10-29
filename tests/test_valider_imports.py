@@ -153,20 +153,46 @@ class ValiderImportsTests(unittest.TestCase):
         self.assertFalse(rapport.ok)
 
 
-    def test_trouver_compilateur_lua_present(self) -> None:
-        with unittest.mock.patch("shutil.which", return_value="/usr/bin/luac"):
-            self.assertEqual(valider.trouver_compilateur_lua(), ["luac", "-p"])
-
-    def test_trouver_compilateur_lua_luajit(self) -> None:
+    def test_compilateur_lua_54(self) -> None:
         def faux_which(nom: str) -> str | None:
-            return "/usr/bin/luajit" if nom == "luajit" else None
+            return "/usr/bin/luac5.4" if nom == "luac5.4" else None
 
         with unittest.mock.patch("shutil.which", side_effect=faux_which):
-            self.assertEqual(valider.trouver_compilateur_lua(), ["luajit", "-bl"])
+            with unittest.mock.patch.object(
+                valider, "_version_lua", return_value="Lua 5.4.7  Copyright"
+            ):
+                self.assertEqual(
+                    valider.trouver_compilateur_lua(), ["luac5.4", "-p"]
+                )
 
-    def test_trouver_compilateur_lua_absent(self) -> None:
+    def test_compilateur_lua_53_accepte(self) -> None:
+        def faux_which(nom: str) -> str | None:
+            return "/usr/bin/luac" if nom == "luac" else None
+
+        with unittest.mock.patch("shutil.which", side_effect=faux_which):
+            with unittest.mock.patch.object(
+                valider, "_version_lua", return_value="Lua 5.3.6  Copyright"
+            ):
+                self.assertEqual(valider.trouver_compilateur_lua(), ["luac", "-p"])
+
+    def test_compilateur_lua_51_refuse(self) -> None:
+        def faux_which(nom: str) -> str | None:
+            return "/usr/bin/luac" if nom == "luac" else None
+
+        with unittest.mock.patch("shutil.which", side_effect=faux_which):
+            with unittest.mock.patch.object(
+                valider, "_version_lua", return_value="Lua 5.1.5  Copyright"
+            ):
+                self.assertIsNone(valider.trouver_compilateur_lua())
+
+    def test_compilateur_lua_absent(self) -> None:
         with unittest.mock.patch("shutil.which", return_value=None):
             self.assertIsNone(valider.trouver_compilateur_lua())
+
+    def test_version_lua_commande_inexistante(self) -> None:
+        self.assertEqual(
+            valider._version_lua("/bin/commande-inexistante-xyz"), ""
+        )
 
     def test_syntaxe_valide(self) -> None:
         fichier = self.racine_tmp / "x.lua"
