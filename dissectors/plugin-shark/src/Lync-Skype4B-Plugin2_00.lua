@@ -1,4 +1,5 @@
--- SPDX-License-Identifier: LicenseRef-Cussen-Lync-Skype4B (licence spécifique, voir l en-tête du fichier)
+-- SPDX-License-Identifier: LicenseRef-Cussen-Lync-Skype4B
+-- Licence spécifique de l'auteur (James Cussen) : énoncée dans l'en-tête du fichier.
 -- Importé de https://github.com/phreakocious/plugin-shark,
 -- commit 96ff6f044b3d0409bc9a1588c8be912ac3b3f77f du 05/10/2026 (fichier vendored, voir README.md).
 

@@ -25,12 +25,20 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Compilateur Lua 5.4 (vérification de syntaxe, optionnel)
-        # Wireshark 4.4+ embarque Lua 5.3/5.4 uniquement : on vérifie la
-        # syntaxe avec luac 5.4 (le luac par défaut du runner peut être 5.1).
+      - name: Compilateur Lua 5.4 (vérification de syntaxe)
+        # Wireshark 4.4+ embarque Lua 5.3/5.4 uniquement ; le luac du runner
+        # peut être 5.1 (syntaxe différente → faux échecs). Si aucun luac
+        # 5.3/5.4 n'est disponible, Lua 5.4 est compilé depuis les sources
+        # (sans sudo) pour fournir `luac` ; à défaut, avertissement sans échec.
         run: |
-          if ! command -v luac5.4 >/dev/null 2>&1; then
-            sudo apt-get update -qq && sudo apt-get install -y -qq lua5.4 || true
+          if ! command -v luac5.4 >/dev/null 2>&1 && ! command -v luac5.3 >/dev/null 2>&1; then
+            if ! command -v gcc >/dev/null 2>&1 || ! command -v make >/dev/null 2>&1; then
+              echo "::warning::gcc/make absents : vérification de syntaxe ignorée"
+              exit 0
+            fi
+            curl -sL https://www.lua.org/ftp/lua-5.4.7.tar.gz | tar xz -C "$RUNNER_TEMP"
+            make -C "$RUNNER_TEMP/lua-5.4.7/src" -s luac
+            echo "$RUNNER_TEMP/lua-5.4.7/src" >> "$GITHUB_PATH"
           fi
 
       - name: Validation des imports
