@@ -36,7 +36,7 @@ conforme de l'amont).
 | Chemin | Rôle |
 |---|---|
 | `src/maritime-dissector.lua` | Point d'entrée IEC 61162-450 / NMEA 0183 / NMEA 2000 |
-| `src/maritime-modules/` | Analyseurs (`parser/`), protocoles (`proto/`, dont 258 PGN NMEA 2000 générés dans `proto/pgn/`), tables d'identifiants (`knownids/`), heuristiques et utilitaires |
+| `src/maritime-modules/` | Analyseurs (`parser/`), protocoles (`proto/`, dont 245 PGN NMEA 2000 générés dans `proto/pgn/`), tables d'identifiants (`knownids/`), heuristiques et utilitaires |
 | `src/br24-dissector.lua`, `src/br24-modules/` | Radar Navico BR24 |
 | `src/furuno-dissector.lua`, `src/furuno-modules/` | Radars Furuno |
 
