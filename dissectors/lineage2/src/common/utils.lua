@@ -1,0 +1,94 @@
+-- SPDX-License-Identifier: GPL-3.0-only
+-- Importé de https://github.com/eldarkg/lineage2wireshark (common/utils.lua),
+-- commit 44762d9fa378b5f0b23d5346dfbd854fc5c5eb41 du 19/10/2025.
+-- Licence amont : GPL-3.0 (LICENSE amont) — voir README.md.
+
+--[[
+    License: GPL3
+    Author: Eldar Khayrullin
+    Email: eldar.khayrullin@mail.ru
+    Date: 2024
+    Description: common
+]]--
+
+local _M = {}
+
+---@param path string Relative path
+---@return string
+function _M.abs_path(path)
+    return Dir.personal_plugins_path() .. "/lineage2wireshark/" .. path
+end
+
+---@param buf ByteArray|TvbRange
+---@return integer
+function _M.le(buf)
+    return buf:le_uint()
+end
+
+---@param buf ByteArray|TvbRange
+---@return integer
+function _M.be(buf)
+    return buf:uint()
+end
+
+---Invert table key and value between themselves
+---@param tbl table
+---@return table
+function _M.invert(tbl)
+    local itbl = {}
+    for key, value in pairs(tbl) do
+        itbl[value] = key
+    end
+    return itbl
+end
+
+function _M.generated(item, isgen)
+    return isgen and item:set_generated() or item
+end
+
+local function add_generic(add, item, protofield, tvbrange, label, isgen)
+    item = _M.generated(add(item, protofield, tvbrange), isgen)
+    item = label and item:prepend_text(label) or item
+end
+
+function _M.add_le(item, protofield, tvbrange, label, isgen)
+    add_generic(item.add_le, item, protofield, tvbrange, label, isgen)
+end
+
+function _M.add_be(item, protofield, tvbrange, label, isgen)
+    add_generic(item.add, item, protofield, tvbrange, label, isgen)
+end
+
+---@param pinfo Pinfo
+---@param isserver boolean
+---@param isgen boolean
+---@param str string
+function _M.set_info_field(pinfo, isserver, isgen, str)
+    local src_role = isserver and "Server" or "Client"
+    pinfo.cols.info:clear_fence()
+    pinfo.cols.info:set(
+        tostring(pinfo.src_port) .. " → " .. tostring(pinfo.dst_port) ..
+        " " .. src_role .. ": " .. (isgen and ("[" .. str .. "]") or str))
+    pinfo.cols.info:fence()
+end
+
+---@param pinfo Pinfo
+---@param isserver boolean
+---@param isgen boolean
+---@param opcode_stat table
+---@param opcode_str function
+function _M.set_info_field_stat(pinfo, isserver, isgen, opcode_stat, opcode_str)
+    local str = ""
+    for op, count in pairs(opcode_stat) do
+        if #str ~= 0 then
+            str = str .. ", "
+        end
+        str = str .. opcode_str(op, isserver)
+        if 1 < count then
+            str = str .. "(" .. count .. ")"
+        end
+    end
+    _M.set_info_field(pinfo, isserver, isgen, str)
+end
+
+return _M
