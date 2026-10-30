@@ -1,0 +1,50 @@
+-- SPDX-License-Identifier: MIT
+-- Importé de https://github.com/jhonatanruelo/wyd-decrypt-plugin (key_table.lua),
+-- commit 7aba0a8a8315ac1d533059a15a60670ef6006570 du 05/08/2026.
+-- Licence amont : MIT (LICENSE) — voir README.md.
+
+-- 512-byte KEY_TABLE as hex (whitespace ignored). See README for how to replace.
+local KEY_TABLE_HEX = [[
+848737d7ea79917d4b4b857d8781917c
+0f739191877d0d7d868f730fe1dd857d
+057d8583879c85330de287190f798586
+377dd7dde97dd77d8579057d0fe1877e
+2387f5795fe34b83a3a2ae0e147dde7e
+857a85afcd7d87a5877de17d887d1591
+237d877c0d7a8587177c857dac80bb79
+849b5ba5d78f050f857e85808598f59d
+a31a0d19877c857d847d857ee7970d0f
+857bea7dad80ad7db7af0d7de93d857d
+87b7237de7b7a30c877e85a57d7635b9
+0d6f237d879b850ce1a10d7f877d847a
+847be186e86fd17985195395c347197d
+e70c377c237d857d4b7921a5877d197d
+0d7d1591237d877c857a85afcd7d877d
+e93d857d1579857dc17bea7db77d857d
+857d0d7de9738579057dd77d85e1b9e1
+0f6585862d7dd7dda38ee67dde7eae0e
+0fe1897e237df57923e14b830c0f857b
+857e8f808598f57a851a0de10f7c890c
+850b2369877b230c1fb7217a887e8fa5
+7d80b7b918bf4b1985a591808781877c
+0f739191848737d78679e1dd857a739b
+057d0d83879c8533877d850f877d0d7d
+f67e877d881989f5d1dd857d8bc3ea7a
+d7b00d7d87a5877c737e7d8687238510
+d7dfeda5e17a8523ea7e8598ad79867d
+857dd77de17af57d85b02b37e17a8779
+847d7373877d237de97d857e027ddd2d
+8779e779ad7c23da870d0d7be7799b7d
+d78f057d0d348f7dad87e97c85808579
+8ac3e7a5e86b0d74107333170d372119
+]]
+
+local KT = {}
+local n = 0
+for byte in KEY_TABLE_HEX:gmatch("%x%x") do
+  KT[n] = tonumber(byte, 16)
+  n = n + 1
+end
+assert(n == 512, string.format("key_table.lua: expected 512 bytes, got %d", n))
+
+return KT
