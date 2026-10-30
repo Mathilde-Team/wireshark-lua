@@ -1,0 +1,2 @@
+# PlayerDeathV2 (118): killed by player 1 with item 0x0102 prefix 3
+0000 0e 00 76 02 61 01 00 02 01 03 64 00 01 00

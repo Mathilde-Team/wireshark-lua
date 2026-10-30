@@ -1,0 +1,2 @@
+# PlayerSpawn (12) with death counters, team and SpawningIntoWorld context
+0000 12 00 0c 02 34 08 2c 01 00 00 00 00 04 00 01 00 03 01

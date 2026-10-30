@@ -1,0 +1,13 @@
+1	Terraria PlayerInfo id=3 len=5; Terraria PlayerActive id=14 len=5
+Terraria PlayerInfo
+    Frame Length: 5
+    Packet ID: PlayerInfo (3)
+    Payload
+        Player ID: 7
+        Check Bytes In Client Loop: False
+Terraria PlayerActive
+    Frame Length: 5
+    Packet ID: PlayerActive (14)
+    Payload
+        Player ID: 7
+        Active: 1

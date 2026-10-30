@@ -1,0 +1,14 @@
+1	Terraria PlayerDeathV2 id=118 len=14
+Terraria PlayerDeathV2
+    Frame Length: 14
+    Packet ID: PlayerDeathV2 (118)
+    Payload
+        Player ID: 2
+        Death Reason: 610100020103
+            Death Reason Flags: 0x61
+            Killer Player ID: 1
+            Item Type: 258
+            Item Prefix: 3
+        Damage: 100
+        Hit Direction: 1
+        Flags: 0x00
