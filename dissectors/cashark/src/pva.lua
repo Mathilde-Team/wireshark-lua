@@ -1,3 +1,4 @@
+-- SPDX-License-Identifier: BSD-3-Clause
 -- Importé de https://github.com/mdavidsaver/cashark,
 -- commit 20ffcc19b5576d40ff4c9074b36f1a6031f5982e du 22/08/2025.
 -- Licence amont : EPICS Open License (BSD 3 clauses, Regents of the University of California) — voir README.md et LICENSE.txt.
