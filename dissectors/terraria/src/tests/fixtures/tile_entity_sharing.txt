@@ -1,0 +1,3 @@
+# TileEntitySharing (86): training dummy (type 0) follows, then removal of entity 2
+0000 0f 00 56 01 00 00 00 01 00 0a 00 0b 00 ff ff
+0000 08 00 56 02 00 00 00 00

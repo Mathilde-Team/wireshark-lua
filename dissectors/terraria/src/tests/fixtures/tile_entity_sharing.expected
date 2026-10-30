@@ -1,0 +1,19 @@
+1	Terraria TileEntitySharing id=86 len=15
+2	Terraria TileEntitySharing id=86 len=8
+Terraria TileEntitySharing
+    Frame Length: 15
+    Packet ID: TileEntitySharing (86)
+    Payload
+        Tile Entity ID: 1
+        Entity Present: True
+        Tile Entity Type: TrainingDummy (0)
+        X: 10
+        Y: 11
+        Extra Data: ffff
+            NPC Index: -1
+Terraria TileEntitySharing
+    Frame Length: 8
+    Packet ID: TileEntitySharing (86)
+    Payload
+        Tile Entity ID: 2
+        Entity Present: False

@@ -1,0 +1,8 @@
+1	Malformed packet id=1 len=2
+Terraria Malformed Packet
+    Frame Length: 2
+    Packet ID: Hello (1)
+    [Expert Info (Error/Malformed): Frame length 2 is shorter than the 3-byte header]
+        [Frame length 2 is shorter than the 3-byte header]
+        [Severity level: Error]
+        [Group: Malformed]

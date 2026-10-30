@@ -1,0 +1,7 @@
+# Hello, PlayerInfo with its 1.4.5 bool, SyncPlayer with voice fields and three trailing flag
+# bytes, SyncEquipment with a u16 slot and favourite flag, SpawnTileData with team
+0000 0f 00 01 0b 54 65 72 72 61 72 69 61 33 32 36
+0000 05 00 03 02 01
+0000 2c 00 04 02 03 01 00 00 00 3f 35 04 4b 72 69 73 00 02 01 00 00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14 01 02 04
+0000 0c 00 05 02 31 01 63 00 51 b3 0d 01
+0000 0c 00 08 34 08 00 00 2c 01 00 00 01

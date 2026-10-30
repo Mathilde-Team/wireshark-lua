@@ -1,0 +1,2 @@
+# PlayerControls (13) with velocity, a mount and a camera target
+0000 23 00 0d 02 40 84 00 20 05 00 00 c8 44 00 00 96 45 00 00 20 40 00 00 80 bf 08 00 00 80 d4 44 00 e0 92 45

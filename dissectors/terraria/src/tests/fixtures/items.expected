@@ -1,0 +1,74 @@
+1	Terraria SyncItem id=21 len=33
+2	Terraria SpawnInstancedItem id=90 len=27
+3	Terraria ItemOwner id=22 len=18
+4	Terraria ReleaseItemOwnership id=39 len=6
+5	Terraria SyncItemDespawn id=151 len=5
+6	Terraria ItemPosition id=160 len=13
+Terraria SyncItem
+    Frame Length: 33
+    Packet ID: SyncItem (21)
+    Payload
+        Sync Item: 9001000020410000a041000000000000803f0500000d4900010000003f1e
+            Item ID: 400
+            Position: 000020410000a041
+                Position X: 10
+                Position Y: 20
+            Velocity: 000000000000803f
+                Velocity X: 0
+                Velocity Y: 1
+            Item: 0500000d4900010000003f1e
+                Stack Size: 5
+                Prefix: 0
+                Item Flags: 0x0d
+                Item Net ID: 73
+                Shimmered: True
+                Shimmer Time: 0.5
+                Enemy Grab Delay: 30
+Terraria SpawnInstancedItem
+    Frame Length: 27
+    Packet ID: SpawnInstancedItem (90)
+    Payload
+        Sync Item: 0c00000020410000a041000000000000000001000000f60c
+            Item ID: 12
+            Position: 000020410000a041
+                Position X: 10
+                Position Y: 20
+            Velocity: 0000000000000000
+                Velocity X: 0
+                Velocity Y: 0
+            Item: 01000000f60c
+                Stack Size: 1
+                Prefix: 0
+                Item Flags: 0x00
+                Item Net ID: 3318
+Terraria ItemOwner
+    Frame Length: 18
+    Packet ID: ItemOwner (22)
+    Payload
+        Item ID: 12
+        Player ID: 2
+        Keep Reservation Ticks: 300
+        Grab Delay Player: 255
+        Grab Delay Ticks: 0
+        Position: 000020410000a041
+            Position X: 10
+            Position Y: 20
+Terraria ReleaseItemOwnership
+    Frame Length: 6
+    Packet ID: ReleaseItemOwnership (39)
+    Payload
+        Item Index: 12
+        Force To Server: False
+Terraria SyncItemDespawn
+    Frame Length: 5
+    Packet ID: SyncItemDespawn (151)
+    Payload
+        Item Index: 12
+Terraria ItemPosition
+    Frame Length: 13
+    Packet ID: ItemPosition (160)
+    Payload
+        Item Index: 12
+        Position: 000030410000a841
+            Position X: 11
+            Position Y: 21
