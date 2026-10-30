@@ -32,7 +32,8 @@ conforme de l'amont).
 | `src/zsocket2_prefabs.lua` | Table des prefabs (hash → nom) |
 
 Le dépôt amont contient aussi deux captures d'exemple (`samples/*.pcapng`) —
-non importées : elles contiennent du trafic de jeu réel (adresses, noms de
+non importées (trafic de jeu réel de l'auteur, utilisé seulement pour la
+vérification ci-dessous).
 
 ## Utilisation
 
