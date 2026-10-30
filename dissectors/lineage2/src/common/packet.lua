@@ -1,0 +1,113 @@
+-- SPDX-License-Identifier: GPL-3.0-only
+-- Importé de https://github.com/eldarkg/lineage2wireshark (common/packet.lua),
+-- commit 44762d9fa378b5f0b23d5346dfbd854fc5c5eb41 du 19/10/2025.
+-- Licence amont : GPL-3.0 (LICENSE amont) — voir README.md.
+
+--[[
+    License: GPL3
+    Author: Eldar Khayrullin
+    Email: eldar.khayrullin@mail.ru
+    Date: 2024-2025
+    Description: Packet
+]]--
+
+---Workaround: skip 1st pass without root path
+if not package.searchpath("common.packet", package.path) then
+    return
+end
+
+local _M = {}
+
+_M.HEADER_LEN = 2
+
+local LENGTH_LEN = _M.HEADER_LEN
+
+local LENGTH_OFFSET = 0
+
+local OPCODE_PAYLOAD_OFFSET = 0
+
+---@param tvb Tvb Packet
+---@return TvbRange
+function _M.length_tvbr(tvb)
+    return tvb(LENGTH_OFFSET, LENGTH_LEN)
+end
+
+---@param tvb Tvb Packet
+---@return integer
+function _M.length(tvb)
+    return _M.length_tvbr(tvb):le_uint()
+end
+
+---@param tvb Tvb Packet
+---@param pinfo Pinfo
+---@param offset integer
+function _M.get_len(tvb, pinfo, offset)
+    return _M.length(tvb(offset))
+end
+
+---@param tvb Tvb Packet
+---@return TvbRange payload Packet payload without header length
+function _M.payload_tvbr(tvb)
+    return tvb(_M.HEADER_LEN)
+end
+
+---@param tvb Tvb Packet
+---@return ByteArray payload Packet payload without header length
+function _M.payload(tvb)
+    return _M.payload_tvbr(tvb):bytes()
+end
+
+---@param tvbr TvbRange Payload
+---@param op_len integer Opcode length
+---@return TvbRange
+function _M.opcode_tvbr(tvbr, op_len)
+    return tvbr(OPCODE_PAYLOAD_OFFSET, op_len)
+end
+
+---@param payload ByteArray Payload
+---@param opcode_name table Opcode names
+---@return integer opcode Opcode
+---@return integer op_len Opcode length
+function _M.opcode(payload, opcode_name)
+    local opcode
+    local max_len = math.min(4, payload:len())
+    local op_len = max_len
+    for l = 1, max_len do
+        opcode = payload:uint(OPCODE_PAYLOAD_OFFSET, l)
+        if opcode_name[opcode] then
+            op_len = l
+            break
+        end
+    end
+    return opcode, op_len
+end
+
+---@param tvbr TvbRange Payload
+---@param op_len integer Opcode length
+---@return TvbRange|nil
+function _M.data_tvbr(tvbr, op_len)
+    return op_len < tvbr:len() and tvbr(op_len) or nil
+end
+
+---@param payload ByteArray Payload
+---@param op_len integer Opcode length
+---@return ByteArray
+function _M.data(payload, op_len)
+    return op_len < payload:len()
+            and payload(op_len, payload:len() - op_len)
+            or ByteArray.new()
+end
+
+---@param payload ByteArray
+---@return integer
+function _M.checksum(payload)
+    local DWORD_SIZE = 4
+    local chksum = 0
+    for i = 0, payload:len() - 1, DWORD_SIZE do
+        local dword = payload:le_uint(i, DWORD_SIZE)
+        chksum = chksum ~ dword
+    end
+    return chksum
+end
+
+return _M
