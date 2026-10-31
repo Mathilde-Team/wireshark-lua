@@ -22,5 +22,8 @@ Agents et humains : lire d'abord [CLAUDE.md](CLAUDE.md) et la
 
 ## Version
 
-Aucune version pour l'instant ; le tag `vX.Y.Z` sera défini quand du code
-sera ajouté (source de vérité : les tags Git du dépôt).
+**0.1.0** — première version du dépôt outillé : collecte de dissecteurs
+(importée issue par issue), validation CI des imports et licence
+GPL-3.0-or-later. Source de vérité : les tags Git du dépôt (`vX.Y.Z`,
+SemVer) ; le tag `v0.1.0` est posé sur le commit de livraison de cette
+version sur `main`.
