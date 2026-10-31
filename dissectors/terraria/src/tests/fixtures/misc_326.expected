@@ -1,0 +1,78 @@
+1	Terraria SyncTilePaintOrCoating id=63 len=9
+2	Terraria QuickStackChests id=85 len=12
+3	Terraria MoonlordHorror id=103 len=11
+4	Terraria TEDisplayDollDataSync id=121 len=11
+5	Terraria TEDisplayDollDataSync id=121 len=15
+6	Terraria ShimmerActions id=146 len=16
+7	Terraria SyncLoadout id=147 len=7
+8	Terraria SyncChestSize id=155 len=7
+9	Terraria Ping id=154 len=3
+Terraria SyncTilePaintOrCoating
+    Frame Length: 9
+    Packet ID: SyncTilePaintOrCoating (63)
+    Payload
+        X: 10
+        Y: 11
+        Color: 2
+        Is Coating: True
+Terraria QuickStackChests
+    Frame Length: 12
+    Packet ID: QuickStackChests (85)
+    Payload
+        Count: 2
+        Slots: 0a000b00
+            Inventory Slot / Chest: 10
+            Inventory Slot / Chest: 11
+        Smart Stack: True
+Terraria MoonlordHorror
+    Frame Length: 11
+    Packet ID: MoonlordHorror (103)
+    Payload
+        Moon Lord Countdown Max: 3600
+        Moon Lord Countdown: 1200
+Terraria TEDisplayDollDataSync
+    Frame Length: 11
+    Packet ID: TEDisplayDollDataSync (121)
+    Payload
+        Player ID: 2
+        Tile Entity ID: 5
+        Item Index: 0
+        Command: Pose (2)
+        Pose: 1
+Terraria TEDisplayDollDataSync
+    Frame Length: 15
+    Packet ID: TEDisplayDollDataSync (121)
+    Payload
+        Player ID: 2
+        Tile Entity ID: 5
+        Item Index: 3
+        Command: Dye (1)
+        Item ID: 2700
+        Stack: 1
+        Prefix: 0
+Terraria ShimmerActions
+    Frame Length: 16
+    Packet ID: ShimmerActions (146)
+    Payload
+        Action: CoinLuck (1)
+        Position: 0000a0400000c040
+            Position X: 5
+            Position Y: 6
+        Coin Amount: 100
+Terraria SyncLoadout
+    Frame Length: 7
+    Packet ID: SyncLoadout (147)
+    Payload
+        Player ID: 2
+        Loadout Index: 1
+        Hidden Accessories: 0x0004
+Terraria SyncChestSize
+    Frame Length: 7
+    Packet ID: SyncChestSize (155)
+    Payload
+        Chest ID: 3
+        Slots: 80
+Terraria Ping
+    Frame Length: 3
+    Packet ID: Ping (154)
+    Payload

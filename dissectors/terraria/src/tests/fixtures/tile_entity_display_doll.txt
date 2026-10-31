@@ -1,0 +1,2 @@
+# TileEntitySharing (86) for a display doll: pose, the ninth equip slot and the misc slot
+0000 20 00 56 09 00 00 00 01 03 32 00 3c 00 01 00 04 03 01 00 00 01 00 02 00 00 01 00 03 00 00 01 00

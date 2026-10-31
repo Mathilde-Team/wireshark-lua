@@ -1,0 +1,22 @@
+1	Terraria PlayerControls id=13 len=35
+Terraria PlayerControls
+    Frame Length: 35
+    Packet ID: PlayerControls (13)
+    Payload
+        Update Player: 0240840020050000c8440000964500002040000080bf08000080d44400e09245
+            Player ID: 2
+            Control: 0x40
+            Pulley: 0x84
+            Misc: 0x00
+            Sleeping Info: 0x20
+            Selected Item: 5
+            Position: 0000c84400009645
+                Position X: 1600
+                Position Y: 4800
+            Velocity: 00002040000080bf
+                Velocity X: 2.5
+                Velocity Y: -1
+            Mount Type: 8
+            Camera Target: 0080d44400e09245
+                Camera Target X: 1700
+                Camera Target Y: 4700

@@ -1,0 +1,2 @@
+# AreaTileChange (20): a 2x1 rectangle, column-major
+0000 1d 00 14 64 00 c8 00 02 01 00 05 08 00 1b 15 00 24 00 12 00 04 00 09 00 00 00 00 80 00

@@ -1,0 +1,28 @@
+1	Terraria Kick id=2 len=52
+2	Terraria StatusTextSize id=9 len=29
+Terraria Kick
+    Frame Length: 52
+    Packet ID: Kick (2)
+    Payload
+        Text Mode: LocalizationKey (2)
+        Reason: LegacyMultiplayer.19
+        Substitution Count: 2
+        Substitution: 010b7b307d20616e64207b317d010003426f62
+            Text Mode: Formattable (1)
+            Substitution Text: {0} and {1}
+            Substitution Count: 1
+            Substitution: 0003426f62
+                Text Mode: Literal (0)
+                Substitution Text: Bob
+        Substitution: 0005416c696365
+            Text Mode: Literal (0)
+            Substitution Text: Alice
+Terraria StatusTextSize
+    Frame Length: 29
+    Packet ID: StatusTextSize (9)
+    Payload
+        Status Max: 15
+        Message: 0013526563656976696e672074696c65206461746100
+            Text Mode: Literal (0)
+            Status Text: Receiving tile data
+            Status Text Flags: 0x00

@@ -1,0 +1,12 @@
+1	Terraria PlayLegacySound id=132 len=26
+Terraria PlayLegacySound
+    Frame Length: 26
+    Packet ID: PlayLegacySound (132)
+    Payload
+        X: 0
+        Y: 0
+        Sound ID: 1
+        Sound Flags: 0x07
+        Style: 2
+        Volume: 1
+        Pitch: 0.5

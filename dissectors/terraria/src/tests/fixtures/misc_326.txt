@@ -1,0 +1,12 @@
+# Paint with coating (63), QuickStackChests (85), MoonlordHorror (103) with two ints,
+# TEDisplayDollDataSync (121) pose and item commands, ShimmerActions (146), SyncLoadout (147),
+# SyncChestSize (155), and the empty Ping (154)
+0000 09 00 3f 0a 00 0b 00 02 01
+0000 0c 00 55 02 00 00 00 0a 00 0b 00 01
+0000 0b 00 67 10 0e 00 00 b0 04 00 00
+0000 0b 00 79 02 05 00 00 00 00 02 01
+0000 0f 00 79 02 05 00 00 00 03 01 8c 0a 01 00 00
+0000 10 00 92 01 00 00 a0 40 00 00 c0 40 64 00 00 00
+0000 07 00 93 02 01 04 00
+0000 07 00 9b 03 00 50 00
+0000 03 00 9a

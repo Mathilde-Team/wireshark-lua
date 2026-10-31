@@ -1,0 +1,33 @@
+-- SPDX-License-Identifier: GPL-2.0-only
+-- Importé de https://codeberg.org/TSRBerry/ldn_utils (wireshark/ldn_mitm/types/commonNetworkInfo.lua),
+-- commit 1ee820b4f068e2ef85d2c227222b04996961b3dd du 17/10/2022.
+-- Licence amont : GPLv2 (LICENSE, sans clause « or later ») — voir README.md.
+
+-- Proto fields
+local f_bssid = ProtoField.ether("ldn_mitm.common.bssid", "BSSID")
+local f_ssid_length = ProtoField.uint8("ldn_mitm.common.ssid_length", "SSID length")
+local f_ssid = ProtoField.stringz("ldn_mitm.common.ssid", "SSID", base.NONE)
+local f_channel = ProtoField.int16("ldn_mitm.common.channel", "Channel", base.DEC)
+local f_link_level = ProtoField.int8("ldn_mitm.common.link_level", "Link level", base.DEC)
+local f_network_type = ProtoField.uint8("ldn_mitm.common.network_type", "Network type", base.DEC)
+
+-- Proto
+local p_common_netinfo = Proto("ldn_mitm.common", "Common network info")
+p_common_netinfo.fields = {f_bssid, f_ssid_length, f_ssid, f_channel, f_link_level, f_network_type}
+
+-- Dissector
+function p_common_netinfo.dissector(buffer, pinfo, tree)
+    length = buffer:len()
+    if length == 0 then
+        return
+    end
+
+    local subtree = tree:add(p_common_netinfo, buffer(0, 48), "Common network info")
+    subtree:add_le(f_bssid, buffer(0, 6))
+    subtree:add_le(f_ssid_length, buffer(6, 1))
+    subtree:add_le(f_ssid, buffer(7, 33))
+    subtree:add_le(f_channel, buffer(40, 2))
+    subtree:add_le(f_link_level, buffer(42, 1))
+    subtree:add_le(f_network_type, buffer(43, 1))
+    -- padding 4
+end

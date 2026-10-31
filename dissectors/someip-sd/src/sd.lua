@@ -1,0 +1,72 @@
+-- SPDX-License-Identifier: MIT
+-- Importé de https://github.com/jamores/eth-ws-someip,
+-- commit 39c7529577e27c80f18d7362204eadf026b42ec9 du 22/06/2025.
+-- Licence amont : MIT (LICENSE amont) — voir README.md.
+-- File : sd.lua
+-- Who  : Jose Amores
+-- What : SD-over-SOMEIP dissector, called heuristically from SOMEIP
+
+-- bitwise ops helpers
+local band,bor = bit.band,bit.bor
+local lshift, rshift = bit.lshift,bit.rshift
+local tohex = bit.tohex
+
+-- SOME/IP-SD protocol
+p_sd = Proto("sd","Scalable service-Oriented MiddlewarE over IP - Service Discovery")
+
+local f_flags           = ProtoField.uint8("sd.flags","Flags",base.HEX)
+local f_flags_reboot    = ProtoField.bool("sd.flags.reboot", "Reboot Flag")
+local f_flags_unicast   = ProtoField.bool("sd.flags.unicast", "Unicast Flag")
+local f_flags_init_data = ProtoField.bool("sd.flags.init_data", "Explicit Initial Data Control Flag")
+
+local f_res      = ProtoField.uint24("sd.res","Reserved",base.HEX)
+local f_ents_len = ProtoField.uint32("sd.len_ent","LengthEntries",base.HEX)
+local f_ents     = ProtoField.bytes("sd.ent","EntriesArray")
+local f_opts_len = ProtoField.uint32("sd.len_opt","LengthOptions",base.HEX)
+local f_opts     = ProtoField.bytes("sd.opt","OptionsArray")
+
+p_sd.fields = {f_flags,f_flags_reboot,f_flags_unicast,f_flags_init_data,f_res,f_ents_len,f_ents,f_opts_len,f_opts}
+
+function p_sd.dissector(buf,pinfo,root)
+    pinfo.cols.protocol = "SOME/IP-SD"
+
+    -- create subtree
+    local subtree = root:add(p_sd,buf(0))
+
+    -- add protocol fields to subtree
+    --
+    local offset = 0
+    
+    -- Flags
+    flags_tree = subtree:add(f_flags,buf(offset,1))
+    flags_tree:add(f_flags_reboot,buf(0,1):bitfield(0,1))
+    flags_tree:add(f_flags_unicast,buf(0,1):bitfield(1,1))
+    flags_tree:add(f_flags_init_data,buf(0,1):bitfield(2,1))
+
+    offset = offset + 1
+
+    -- Reserved
+    subtree:add(f_res,buf(offset,3))
+    offset = offset+3
+
+    -- Entries length
+    local e_len = buf(offset,4):uint()
+    subtree:add(f_ents_len,buf(offset,4))
+    offset = offset + 4
+    -- Entries
+    --e_tree = subtree:add(f_ents,buf(offset,e_len))
+    e_tree = subtree:add("EntriesArray")
+    Dissector.get("sd_entries"):call(buf(offset-4):tvb(),pinfo,e_tree)
+    offset = offset + e_len
+
+    -- Options length
+    local o_len = buf(offset,4):uint()
+    subtree:add(f_opts_len,buf(offset,4))
+    offset = offset + 4
+    -- Options
+    --o_tree = subtree:add(f_ents,buf(offset,o_len))
+    o_tree = subtree:add("OptionsArray")
+    Dissector.get("sd_options"):call(buf(offset-4):tvb(),pinfo,o_tree)
+    offset = offset + o_len
+
+end

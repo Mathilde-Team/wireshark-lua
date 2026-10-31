@@ -1,0 +1,6 @@
+# SyncPlayerZone (36) with five zone bytes and town NPCs, PlayerBuffs (50) and NPCBuffs (54)
+# as zero-terminated lists, UpdatePlayerLuckFactors (134)
+0000 0a 00 24 02 01 02 03 04 05 03
+0000 0a 00 32 02 05 01 4c 01 00 00
+0000 0b 00 36 07 00 14 00 58 02 00 00
+0000 18 00 86 02 00 00 00 00 cd cc 4c 3e 00 01 00 cd cc 4c 3d 00 00 00 00 01

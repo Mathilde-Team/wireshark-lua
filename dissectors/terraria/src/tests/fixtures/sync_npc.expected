@@ -1,0 +1,26 @@
+1	Terraria SyncNPC id=23 len=43
+Terraria SyncNPC
+    Frame Length: 43
+    Packet ID: SyncNPC (23)
+    Payload
+        NPC Update: 07030000c842000048430000000000000000ff000d050000803f000000c00400020000c03f02dc05
+            NPC Index: 7
+            Generation: 3
+            Position: 0000c84200004843
+                Position X: 100
+                Position Y: 200
+            Velocity: 0000000000000000
+                Velocity X: 0
+                Velocity Y: 0
+            Target: 255
+            NPC Flags 1: 0x0d
+            NPC Flags 2: 0x05
+            AI: 0000803f000000c0
+                AI 0: 1
+                AI 1: -2
+            NPC Net ID: 4
+            Difficulty Player Count: 2
+            Strength Multiplier: 1.5
+            Life: 02dc05
+                Life Bytes: 2
+                Life: 1500

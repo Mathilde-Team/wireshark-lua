@@ -1,0 +1,46 @@
+1	Terraria SyncPlayerZone id=36 len=10
+2	Terraria PlayerBuffs id=50 len=10
+3	Terraria NPCBuffs id=54 len=11
+4	Terraria UpdatePlayerLuckFactors id=134 len=24
+Terraria SyncPlayerZone
+    Frame Length: 10
+    Packet ID: SyncPlayerZone (36)
+    Payload
+        Player ID: 2
+        Zone Flags 1: 0x01
+        Zone Flags 2: 0x02
+        Zone Flags 3: 0x03
+        Zone Flags 4: 0x04
+        Zone Flags 5: 0x05
+        Nearby Town NPCs: 3
+Terraria PlayerBuffs
+    Frame Length: 10
+    Packet ID: PlayerBuffs (50)
+    Payload
+        Player ID: 2
+        Buffs: 05014c010000
+            Buff Type: 261
+            Buff Type: 332
+            End Of List: 0
+Terraria NPCBuffs
+    Frame Length: 11
+    Packet ID: NPCBuffs (54)
+    Payload
+        NPC ID: 7
+        Buff: 14005802
+            Buff ID: 20
+            Time: 600
+        End Of List: 0
+Terraria UpdatePlayerLuckFactors
+    Frame Length: 24
+    Packet ID: UpdatePlayerLuckFactors (134)
+    Payload
+        Player ID: 2
+        Ladybug Luck Time Remaining: 0
+        Torch Luck: 0.2
+        Luck Potion: 0
+        Has Garden Gnome Nearby: True
+        Broken Mirror Bad Luck: False
+        Equipment Luck Bonus: 0.05
+        Coin Luck: 0
+        Kite Luck Level: 1

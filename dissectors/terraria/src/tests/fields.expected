@@ -1,0 +1,858 @@
+terraria.achievement_message_event_happened.event_id	Event ID	FT_INT16
+terraria.achievement_message_npc_killed.npc_id	NPC ID	FT_INT16
+terraria.add_npc_buff.buff	Buff	FT_UINT16
+terraria.add_npc_buff.npc_id	NPC ID	FT_INT16
+terraria.add_npc_buff.time	Time	FT_INT16
+terraria.add_player_buff_pvp.buff	Buff	FT_UINT16
+terraria.add_player_buff_pvp.player_id	Player ID	FT_UINT8
+terraria.add_player_buff_pvp.time	Time	FT_INT32
+terraria.angler_quest.completed	Completed	FT_BOOLEAN
+terraria.angler_quest.quest	Quest	FT_UINT8
+terraria.area_tile_change.color	Tile Color	FT_UINT8
+terraria.area_tile_change.flags1	Flags 1	FT_UINT8
+terraria.area_tile_change.flags2	Flags 2	FT_UINT8
+terraria.area_tile_change.flags3	Flags 3	FT_UINT8
+terraria.area_tile_change.frame_x	Frame X	FT_INT16
+terraria.area_tile_change.frame_y	Frame Y	FT_INT16
+terraria.area_tile_change.header	Header	FT_BYTES
+terraria.area_tile_change.height	Height	FT_UINT8
+terraria.area_tile_change.liquid	Liquid Amount	FT_UINT8
+terraria.area_tile_change.liquid_type	Liquid Type	FT_UINT8
+terraria.area_tile_change.root	Area Tile Change	FT_BYTES
+terraria.area_tile_change.tile	Tile	FT_BYTES
+terraria.area_tile_change.tile_change_type	Tile Change Type	FT_UINT8
+terraria.area_tile_change.tile_x	Tile X	FT_INT16
+terraria.area_tile_change.tile_y	Tile Y	FT_INT16
+terraria.area_tile_change.tiles	Tiles	FT_BYTES
+terraria.area_tile_change.type	Tile Type	FT_UINT16
+terraria.area_tile_change.wall	Wall Type	FT_UINT16
+terraria.area_tile_change.wall_color	Wall Color	FT_UINT8
+terraria.area_tile_change.width	Width	FT_UINT8
+terraria.bug_catching.npc_id	NPC ID	FT_INT16
+terraria.bug_catching.player_id	Player ID	FT_UINT8
+terraria.bug_releasing.npc_type	NPC Type	FT_INT16
+terraria.bug_releasing.style	Style	FT_UINT8
+terraria.bug_releasing.x	X	FT_INT32
+terraria.bug_releasing.y	Y	FT_INT32
+terraria.chest_name.chest_id	Chest ID	FT_INT16
+terraria.chest_name.chest_x	Chest X	FT_INT16
+terraria.chest_name.chest_y	Chest Y	FT_INT16
+terraria.chest_name.name	Name	FT_STRING
+terraria.chest_updates.action	Action	FT_UINT8
+terraria.chest_updates.chest_id_to_destroy	Chest ID to Destroy	FT_INT16
+terraria.chest_updates.style	Style	FT_INT16
+terraria.chest_updates.tile_x	Tile X	FT_INT16
+terraria.chest_updates.tile_y	Tile Y	FT_INT16
+terraria.client_uuid.uuid	UUID	FT_STRING
+terraria.combat_text_int.color	Color	FT_BYTES
+terraria.combat_text_int.heal_amount	Heal Amount	FT_INT32
+terraria.combat_text_int.x	X	FT_FLOAT
+terraria.combat_text_int.y	Y	FT_FLOAT
+terraria.combat_text_string.color	Color	FT_BYTES
+terraria.combat_text_string.text	Combat Text	FT_STRING
+terraria.combat_text_string.x	X	FT_FLOAT
+terraria.combat_text_string.y	Y	FT_FLOAT
+terraria.crystal_invasion_send_wait_time.time_until_next_wave	Time Until Next Wave	FT_INT32
+terraria.crystal_invasion_start.x	X	FT_INT16
+terraria.crystal_invasion_start.y	Y	FT_INT16
+terraria.damage_npc.crit	Crit	FT_BOOLEAN
+terraria.damage_npc.damage	Damage	FT_INT16
+terraria.damage_npc.generation	Generation	FT_UINT8
+terraria.damage_npc.hit_direction	Hit Direction	FT_UINT8
+terraria.damage_npc.knockback	Knockback	FT_FLOAT
+terraria.damage_npc.npc_index	NPC Index	FT_UINT8
+terraria.dead_player.player_id	Player ID	FT_UINT8
+terraria.dev_commands.data	Data	FT_BYTES
+terraria.emoji.emoticon_id	Emoticon ID	FT_UINT8
+terraria.emoji.player_index	Player Index	FT_UINT8
+terraria.expert.malformed_payload	Malformed Terraria payload	FT_NONE
+terraria.expert.unread_payload	Payload contains unread bytes	FT_NONE
+terraria.extra_spawn_section_loaded.data	Data	FT_BYTES
+terraria.fish_out_npc.npc_id	NPC ID	FT_INT16
+terraria.fish_out_npc.x	X	FT_UINT16
+terraria.fish_out_npc.y	Y	FT_UINT16
+terraria.food_platter_try_placing.item_id	Item ID	FT_INT16
+terraria.food_platter_try_placing.prefix	Prefix	FT_UINT8
+terraria.food_platter_try_placing.stack	Stack	FT_INT16
+terraria.food_platter_try_placing.x	X	FT_INT16
+terraria.food_platter_try_placing.y	Y	FT_INT16
+terraria.gem_lock_toggle.on	On	FT_BOOLEAN
+terraria.gem_lock_toggle.x	X	FT_INT16
+terraria.gem_lock_toggle.y	Y	FT_INT16
+terraria.heal_player.heal_amount	Heal Amount	FT_INT16
+terraria.heal_player.player_id	Player ID	FT_UINT8
+terraria.hello.version	Client Version	FT_STRING
+terraria.hit_switch.x	X	FT_INT16
+terraria.hit_switch.y	Y	FT_INT16
+terraria.host_token.data	Data	FT_BYTES
+terraria.id	Packet ID	FT_UINT8
+terraria.instrument_sound.note	Note	FT_FLOAT
+terraria.instrument_sound.player_id	Player ID	FT_UINT8
+terraria.invasion_progress_report.icon	Icon	FT_INT8
+terraria.invasion_progress_report.max_progress	Max Progress	FT_INT32
+terraria.invasion_progress_report.progress	Progress	FT_INT32
+terraria.invasion_progress_report.wave	Wave	FT_INT8
+terraria.item_frame_try_placing.item_id	Item ID	FT_INT16
+terraria.item_frame_try_placing.prefix	Prefix	FT_UINT8
+terraria.item_frame_try_placing.stack	Stack	FT_INT16
+terraria.item_frame_try_placing.x	X	FT_INT16
+terraria.item_frame_try_placing.y	Y	FT_INT16
+terraria.item_owner.grab_delay	Grab Delay Ticks	FT_UINT32
+terraria.item_owner.grab_delay_player	Grab Delay Player	FT_UINT8
+terraria.item_owner.item_id	Item ID	FT_INT16
+terraria.item_owner.keep_reservation	Keep Reservation Ticks	FT_UINT32
+terraria.item_owner.player_id	Player ID	FT_UINT8
+terraria.item_owner.position	Position	FT_BYTES
+terraria.item_owner.position_x	Position X	FT_FLOAT
+terraria.item_owner.position_y	Position Y	FT_FLOAT
+terraria.item_position.item_index	Item Index	FT_INT16
+terraria.item_position.position	Position	FT_BYTES
+terraria.item_position.position_x	Position X	FT_FLOAT
+terraria.item_position.position_y	Position Y	FT_FLOAT
+terraria.item_rotation_and_animation.item_animation	Item Animation	FT_INT16
+terraria.item_rotation_and_animation.item_rotation	Item Rotation	FT_FLOAT
+terraria.item_rotation_and_animation.player_id	Player ID	FT_UINT8
+terraria.item_tweaker.ammo	Ammo	FT_INT16
+terraria.item_tweaker.damage	Damage	FT_UINT16
+terraria.item_tweaker.flags1	Flags 1	FT_UINT8
+terraria.item_tweaker.flags2	Flags 2	FT_UINT8
+terraria.item_tweaker.height	Height	FT_INT16
+terraria.item_tweaker.item_index	Item Index	FT_INT16
+terraria.item_tweaker.knockback	Knockback	FT_FLOAT
+terraria.item_tweaker.not_ammo	Not Ammo	FT_BOOLEAN
+terraria.item_tweaker.packed_color_value	Packed Color Value	FT_UINT32
+terraria.item_tweaker.scale	Scale	FT_FLOAT
+terraria.item_tweaker.shoot	Shoot	FT_INT16
+terraria.item_tweaker.shoot_speed	Shoot Speed	FT_FLOAT
+terraria.item_tweaker.use_ammo	Use Ammo	FT_INT16
+terraria.item_tweaker.use_animation	Use Animation	FT_UINT16
+terraria.item_tweaker.use_time	Use Time	FT_UINT16
+terraria.item_tweaker.width	Width	FT_INT16
+terraria.item_use_sound.data	Data	FT_BYTES
+terraria.kick.reason	Reason	FT_STRING
+terraria.kill_projectile.generation	Generation	FT_UINT32
+terraria.kill_projectile.index	Index	FT_UINT32
+terraria.kill_projectile.key	Projectile Key	FT_UINT32
+terraria.kill_projectile.owner	Owner	FT_UINT32
+terraria.kill_projectile.position	Position	FT_BYTES
+terraria.kill_projectile.position_x	Position X	FT_FLOAT
+terraria.kill_projectile.position_y	Position Y	FT_FLOAT
+terraria.land_golf_ball_in_cup.number_of_hits	Number of Hits	FT_UINT16
+terraria.land_golf_ball_in_cup.player_id	Player ID	FT_UINT8
+terraria.land_golf_ball_in_cup.proj_id	Proj ID	FT_UINT16
+terraria.land_golf_ball_in_cup.x	X	FT_UINT16
+terraria.land_golf_ball_in_cup.y	Y	FT_UINT16
+terraria.length	Frame Length	FT_UINT16
+terraria.liquid_update.liquid	Liquid	FT_UINT8
+terraria.liquid_update.liquid_type	Liquid Type	FT_UINT8
+terraria.liquid_update.x	X	FT_INT16
+terraria.liquid_update.y	Y	FT_INT16
+terraria.lock_and_unlock.unlock_type	Unlock Type	FT_UINT8
+terraria.lock_and_unlock.x	X	FT_INT16
+terraria.lock_and_unlock.y	Y	FT_INT16
+terraria.mana_effect.mana_amount	Mana Amount	FT_INT16
+terraria.mana_effect.player_id	Player ID	FT_UINT8
+terraria.mass_wire_operation.end_x	End X	FT_INT16
+terraria.mass_wire_operation.end_y	End Y	FT_INT16
+terraria.mass_wire_operation.start_x	Start X	FT_INT16
+terraria.mass_wire_operation.start_y	Start Y	FT_INT16
+terraria.mass_wire_operation.tool_mode	Tool Mode	FT_UINT8
+terraria.mass_wire_operation_pay.item_type	Item Type	FT_INT16
+terraria.mass_wire_operation_pay.player_id	Player ID	FT_UINT8
+terraria.mass_wire_operation_pay.quantity	Quantity	FT_INT16
+terraria.minion_attack_target_update.minion_attack_target	Minion Attack Target	FT_INT16
+terraria.minion_attack_target_update.player_id	Player ID	FT_UINT8
+terraria.minion_rest_target_update.player_id	Player ID	FT_UINT8
+terraria.minion_rest_target_update.target_x	Target X	FT_FLOAT
+terraria.minion_rest_target_update.target_y	Target Y	FT_FLOAT
+terraria.misc_data_sync.effect_type	Effect Type	FT_UINT8
+terraria.misc_data_sync.player_id	Player ID	FT_UINT8
+terraria.moonlord_horror.max	Moon Lord Countdown Max	FT_INT32
+terraria.moonlord_horror.value	Moon Lord Countdown	FT_INT32
+terraria.murder_someone_elses_portal.projectile_ai	Projectile AI	FT_UINT8
+terraria.murder_someone_elses_portal.projectile_owner	Projectile Owner	FT_UINT16
+terraria.nebula_levelup_request.level_up_type	Level Up Type	FT_UINT16
+terraria.nebula_levelup_request.origin_x	Origin X	FT_FLOAT
+terraria.nebula_levelup_request.origin_y	Origin Y	FT_FLOAT
+terraria.nebula_levelup_request.player_id	Player ID	FT_UINT8
+terraria.net_modules.module_data	Net Module Data	FT_BYTES
+terraria.net_modules.module_id	Net Module ID	FT_UINT16
+terraria.network_text.mode	Text Mode	FT_UINT8
+terraria.network_text.substitution	Substitution	FT_BYTES
+terraria.network_text.substitution_count	Substitution Count	FT_UINT8
+terraria.network_text.text	Substitution Text	FT_STRING
+terraria.npc_buffs.buff	Buff	FT_BYTES
+terraria.npc_buffs.buff_id	Buff ID	FT_UINT16
+terraria.npc_buffs.npc_id	NPC ID	FT_INT16
+terraria.npc_buffs.terminator	End Of List	FT_UINT16
+terraria.npc_buffs.time	Time	FT_UINT16
+terraria.npc_debuff_damage.amount	Damage	FT_INT16
+terraria.npc_debuff_damage.npc_index	NPC Index	FT_UINT8
+terraria.npc_home.home_tile_x	Home Tile X	FT_INT16
+terraria.npc_home.home_tile_y	Home Tile Y	FT_INT16
+terraria.npc_home.homeless	Homeless	FT_UINT8
+terraria.npc_home.npc_id	NPC ID	FT_INT16
+terraria.open_sign_request.x	X	FT_INT16
+terraria.open_sign_request.y	Y	FT_INT16
+terraria.open_sign_response.player_id	Player ID	FT_UINT8
+terraria.open_sign_response.sign_flags	Sign Flags	FT_UINT8
+terraria.open_sign_response.sign_id	Sign ID	FT_INT16
+terraria.open_sign_response.text	Text	FT_STRING
+terraria.open_sign_response.x	X	FT_INT16
+terraria.open_sign_response.y	Y	FT_INT16
+terraria.payload	Payload	FT_BYTES
+terraria.payload.unread	Unread Payload	FT_BYTES
+terraria.place_object.alternate	Alternate	FT_UINT8
+terraria.place_object.direction	Direction	FT_BOOLEAN
+terraria.place_object.random	Random	FT_INT8
+terraria.place_object.style	Style	FT_INT16
+terraria.place_object.type	Type	FT_INT16
+terraria.place_object.x	X	FT_INT16
+terraria.place_object.y	Y	FT_INT16
+terraria.play_legacy_sound.pitch	Pitch	FT_FLOAT
+terraria.play_legacy_sound.sound_flags	Sound Flags	FT_UINT8
+terraria.play_legacy_sound.sound_id	Sound ID	FT_UINT16
+terraria.play_legacy_sound.style	Style	FT_INT32
+terraria.play_legacy_sound.volume	Volume	FT_FLOAT
+terraria.play_legacy_sound.x	X	FT_FLOAT
+terraria.play_legacy_sound.y	Y	FT_FLOAT
+terraria.player_active.active	Active	FT_UINT8
+terraria.player_active.player_id	Player ID	FT_UINT8
+terraria.player_buffs.buff_type	Buff Type	FT_UINT16
+terraria.player_buffs.buffs	Buffs	FT_BYTES
+terraria.player_buffs.player_id	Player ID	FT_UINT8
+terraria.player_buffs.terminator	End Of List	FT_UINT16
+terraria.player_controls.camera_target	Camera Target	FT_BYTES
+terraria.player_controls.camera_target_x	Camera Target X	FT_FLOAT
+terraria.player_controls.camera_target_y	Camera Target Y	FT_FLOAT
+terraria.player_controls.control	Control	FT_UINT8
+terraria.player_controls.home_position	Home Position	FT_BYTES
+terraria.player_controls.home_position_x	Home Position X	FT_FLOAT
+terraria.player_controls.home_position_y	Home Position Y	FT_FLOAT
+terraria.player_controls.misc	Misc	FT_UINT8
+terraria.player_controls.mount_type	Mount Type	FT_UINT16
+terraria.player_controls.original_position	Original Position	FT_BYTES
+terraria.player_controls.original_position_x	Original Position X	FT_FLOAT
+terraria.player_controls.original_position_y	Original Position Y	FT_FLOAT
+terraria.player_controls.player_id	Player ID	FT_UINT8
+terraria.player_controls.position	Position	FT_BYTES
+terraria.player_controls.position_x	Position X	FT_FLOAT
+terraria.player_controls.position_y	Position Y	FT_FLOAT
+terraria.player_controls.pulley	Pulley	FT_UINT8
+terraria.player_controls.root	Update Player	FT_BYTES
+terraria.player_controls.selected_item	Selected Item	FT_UINT8
+terraria.player_controls.sleeping_info	Sleeping Info	FT_UINT8
+terraria.player_controls.velocity	Velocity	FT_BYTES
+terraria.player_controls.velocity_x	Velocity X	FT_FLOAT
+terraria.player_controls.velocity_y	Velocity Y	FT_FLOAT
+terraria.player_death_v2.custom_reason	Death Reason Text	FT_STRING
+terraria.player_death_v2.damage	Damage	FT_INT16
+terraria.player_death_v2.death_reason	Death Reason	FT_BYTES
+terraria.player_death_v2.death_reason_flags	Death Reason Flags	FT_UINT8
+terraria.player_death_v2.flags	Flags	FT_UINT8
+terraria.player_death_v2.hit_direction	Hit Direction	FT_UINT8
+terraria.player_death_v2.item_prefix	Item Prefix	FT_UINT8
+terraria.player_death_v2.item_type	Item Type	FT_INT16
+terraria.player_death_v2.killer_npc_index	Killer NPC Index	FT_INT16
+terraria.player_death_v2.killer_player_id	Killer Player ID	FT_INT16
+terraria.player_death_v2.other_death_type	Other Death Type	FT_UINT8
+terraria.player_death_v2.player_id	Player ID	FT_UINT8
+terraria.player_death_v2.projectile_index	Projectile Index	FT_INT16
+terraria.player_death_v2.projectile_type	Projectile Type	FT_INT16
+terraria.player_heal.heal_amount	Heal Amount	FT_INT16
+terraria.player_heal.player_id	Player ID	FT_UINT8
+terraria.player_hurt_v2.cooldown_counter	Cooldown Counter	FT_INT8
+terraria.player_hurt_v2.custom_reason	Death Reason Text	FT_STRING
+terraria.player_hurt_v2.damage	Damage	FT_INT16
+terraria.player_hurt_v2.death_reason	Death Reason	FT_BYTES
+terraria.player_hurt_v2.death_reason_flags	Death Reason Flags	FT_UINT8
+terraria.player_hurt_v2.flags	Flags	FT_UINT8
+terraria.player_hurt_v2.hit_direction	Hit Direction	FT_UINT8
+terraria.player_hurt_v2.item_prefix	Item Prefix	FT_UINT8
+terraria.player_hurt_v2.item_type	Item Type	FT_INT16
+terraria.player_hurt_v2.killer_npc_index	Killer NPC Index	FT_INT16
+terraria.player_hurt_v2.killer_player_id	Killer Player ID	FT_INT16
+terraria.player_hurt_v2.other_death_type	Other Death Type	FT_UINT8
+terraria.player_hurt_v2.player_id	Player ID	FT_UINT8
+terraria.player_hurt_v2.projectile_index	Projectile Index	FT_INT16
+terraria.player_hurt_v2.projectile_type	Projectile Type	FT_INT16
+terraria.player_info.check_bytes_in_client_loop	Check Bytes In Client Loop	FT_BOOLEAN
+terraria.player_info.player_id	Player ID	FT_UINT8
+terraria.player_life_mana.hp	HP	FT_INT16
+terraria.player_life_mana.max_hp	Max HP	FT_INT16
+terraria.player_life_mana.player_id	Player ID	FT_UINT8
+terraria.player_mana.mana	Mana	FT_INT16
+terraria.player_mana.max_mana	Max Mana	FT_INT16
+terraria.player_mana.player_id	Player ID	FT_UINT8
+terraria.player_spawn.context	Player Spawn Context	FT_UINT8
+terraria.player_spawn.deaths_pve	PvE Deaths	FT_INT16
+terraria.player_spawn.deaths_pvp	PvP Deaths	FT_INT16
+terraria.player_spawn.player_id	Player ID	FT_UINT8
+terraria.player_spawn.position	Spawn Position	FT_BYTES
+terraria.player_spawn.respawn_time	Respawn Time Remaining	FT_INT32
+terraria.player_spawn.spawn_x	Spawn X	FT_INT16
+terraria.player_spawn.spawn_y	Spawn Y	FT_INT16
+terraria.player_spawn.state	Spawn State	FT_BYTES
+terraria.player_spawn.team	Team	FT_UINT8
+terraria.player_stealth.player	Player	FT_UINT8
+terraria.player_stealth.stealth	Stealth	FT_FLOAT
+terraria.poof_of_smoke.packed_vector	Packed Vector	FT_UINT32
+terraria.quests_count_sync.golfer_score	Golfer Score	FT_INT32
+terraria.quests_count_sync.player_id	Player ID	FT_UINT8
+terraria.quests_count_sync.quests_completed	Angler Quests Completed	FT_INT32
+terraria.quick_stack_chests.count	Count	FT_INT32
+terraria.quick_stack_chests.slot	Inventory Slot / Chest	FT_INT16
+terraria.quick_stack_chests.slots	Slots	FT_BYTES
+terraria.quick_stack_chests.smart	Smart Stack	FT_BOOLEAN
+terraria.release_item_ownership.force_to_server	Force To Server	FT_BOOLEAN
+terraria.release_item_ownership.item_index	Item Index	FT_INT16
+terraria.remove_revenge_marker.unique_id	Unique ID	FT_INT32
+terraria.request_chest_open.tile_x	Tile X	FT_INT16
+terraria.request_chest_open.tile_y	Tile Y	FT_INT16
+terraria.request_lucy_popup.data	Data	FT_BYTES
+terraria.request_npc_buff_removal.buff_id	Buff ID	FT_UINT16
+terraria.request_npc_buff_removal.npc_id	NPC ID	FT_INT16
+terraria.request_section.section_x	Section X	FT_UINT16
+terraria.request_section.section_y	Section Y	FT_UINT16
+terraria.request_teleportation_by_server.type	Type	FT_UINT8
+terraria.request_tile_entity_interaction.player_id	Player ID	FT_UINT8
+terraria.request_tile_entity_interaction.tile_entity_id	Tile Entity ID	FT_INT32
+terraria.send_password.password	Password	FT_STRING
+terraria.set_counts_as_host_for_gameplay.counts_as_host	Counts As Host	FT_BOOLEAN
+terraria.set_counts_as_host_for_gameplay.player_id	Player ID	FT_UINT8
+terraria.set_misc_event_values.credits_roll_remaining_time	Credits Roll Remaining Time	FT_INT32
+terraria.set_misc_event_values.unused	Unused	FT_UINT8
+terraria.set_time.day_time	Day Time	FT_BOOLEAN
+terraria.set_time.moon_mod_y	Moon Mod Y	FT_INT16
+terraria.set_time.sun_mod_y	Sun Mod Y	FT_INT16
+terraria.set_time.value	Time Value	FT_INT32
+terraria.shimmer_actions.action	Action	FT_UINT8
+terraria.shimmer_actions.coin_amount	Coin Amount	FT_INT32
+terraria.shimmer_actions.data	Data	FT_BYTES
+terraria.shimmer_actions.position	Position	FT_BYTES
+terraria.shimmer_actions.position_x	Position X	FT_FLOAT
+terraria.shimmer_actions.position_y	Position Y	FT_FLOAT
+terraria.shop_override.flags	Flags	FT_UINT8
+terraria.shop_override.item_type	Item Type	FT_INT16
+terraria.shop_override.prefix	Prefix	FT_UINT8
+terraria.shop_override.slot	Slot	FT_UINT8
+terraria.shop_override.stack	Stack	FT_INT16
+terraria.shop_override.value	Value	FT_INT32
+terraria.smart_text_message.message_color	Message Color	FT_BYTES
+terraria.smart_text_message.message_length	Message Length	FT_INT16
+terraria.smart_text_message.text	Message	FT_STRING
+terraria.social_handshake.data	Data	FT_BYTES
+terraria.spawn_boss_use_license_start_event.invasion_type	Invasion Type	FT_INT16
+terraria.spawn_boss_use_license_start_event.player_id	Player ID	FT_INT16
+terraria.spawn_tile_data.position	Tile Position	FT_BYTES
+terraria.spawn_tile_data.team	Team	FT_UINT8
+terraria.spawn_tile_data.x	X	FT_INT32
+terraria.spawn_tile_data.y	Y	FT_INT32
+terraria.special_fx.data	Data	FT_UINT8
+terraria.special_fx.effect_flags	Effect Flags	FT_UINT8
+terraria.special_fx.tree_gore	Tree Gore	FT_INT16
+terraria.special_fx.x	X	FT_INT32
+terraria.special_fx.y	Y	FT_INT32
+terraria.spectate_player.data	Data	FT_BYTES
+terraria.status_text_size.max	Status Max	FT_INT32
+terraria.status_text_size.message	Message	FT_BYTES
+terraria.status_text_size.text	Status Text	FT_STRING
+terraria.status_text_size.text_flags	Status Text Flags	FT_UINT8
+terraria.sync_cavern_monster_type.monster_type_1	Monster Type 1	FT_UINT16
+terraria.sync_cavern_monster_type.monster_type_2	Monster Type 2	FT_UINT16
+terraria.sync_cavern_monster_type.monster_type_3	Monster Type 3	FT_UINT16
+terraria.sync_cavern_monster_type.monster_type_4	Monster Type 4	FT_UINT16
+terraria.sync_cavern_monster_type.monster_type_5	Monster Type 5	FT_UINT16
+terraria.sync_cavern_monster_type.monster_type_6	Monster Type 6	FT_UINT16
+terraria.sync_cavern_monster_type.monster_types	Monster Types	FT_BYTES
+terraria.sync_chest_item.chest_id	Chest ID	FT_INT16
+terraria.sync_chest_item.item_net_id	Item Net ID	FT_INT16
+terraria.sync_chest_item.item_slot	Item Slot	FT_UINT8
+terraria.sync_chest_item.prefix	Prefix	FT_UINT8
+terraria.sync_chest_item.stack	Stack	FT_INT16
+terraria.sync_chest_size.chest_id	Chest ID	FT_INT16
+terraria.sync_chest_size.slots	Slots	FT_INT16
+terraria.sync_dodge.flag	Flag	FT_UINT8
+terraria.sync_dodge.player_id	Player ID	FT_UINT8
+terraria.sync_emote_bubble.anchor_type	Anchor Type	FT_UINT8
+terraria.sync_emote_bubble.emote	Emote	FT_INT8
+terraria.sync_emote_bubble.emote_id	Emote ID	FT_INT32
+terraria.sync_emote_bubble.emote_lifetime	Emote Lifetime	FT_UINT16
+terraria.sync_emote_bubble.emote_metadata	Emote Metadata	FT_INT16
+terraria.sync_emote_bubble.player_id	Player ID	FT_UINT16
+terraria.sync_equipment.blocked	Blocked	FT_BOOLEAN
+terraria.sync_equipment.favorited	Favorited	FT_BOOLEAN
+terraria.sync_equipment.flags	Slot Flags	FT_UINT8
+terraria.sync_equipment.item	Item	FT_BYTES
+terraria.sync_equipment.item_net_id	Item Net ID	FT_INT16
+terraria.sync_equipment.player_id	Player ID	FT_UINT8
+terraria.sync_equipment.prefix	Prefix	FT_UINT8
+terraria.sync_equipment.slot	Slot	FT_BYTES
+terraria.sync_equipment.slot_id	Slot ID	FT_UINT16
+terraria.sync_equipment.stack	Stack	FT_INT16
+terraria.sync_extra_value.extra_value	Extra Value	FT_INT32
+terraria.sync_extra_value.npc_index	NPC Index	FT_INT16
+terraria.sync_extra_value.x	X	FT_FLOAT
+terraria.sync_extra_value.y	Y	FT_FLOAT
+terraria.sync_item.enemy_grab_delay	Enemy Grab Delay	FT_UINT8
+terraria.sync_item.flags	Item Flags	FT_UINT8
+terraria.sync_item.item	Item	FT_BYTES
+terraria.sync_item.item_id	Item ID	FT_INT16
+terraria.sync_item.item_net_id	Item Net ID	FT_INT16
+terraria.sync_item.position	Position	FT_BYTES
+terraria.sync_item.position_x	Position X	FT_FLOAT
+terraria.sync_item.position_y	Position Y	FT_FLOAT
+terraria.sync_item.prefix	Prefix	FT_UINT8
+terraria.sync_item.root	Sync Item	FT_BYTES
+terraria.sync_item.shimmer_time	Shimmer Time	FT_FLOAT
+terraria.sync_item.shimmered	Shimmered	FT_BOOLEAN
+terraria.sync_item.stack_size	Stack Size	FT_INT16
+terraria.sync_item.velocity	Velocity	FT_BYTES
+terraria.sync_item.velocity_x	Velocity X	FT_FLOAT
+terraria.sync_item.velocity_y	Velocity Y	FT_FLOAT
+terraria.sync_item_cannot_be_taken_by_enemies_deprecated.data	Data	FT_BYTES
+terraria.sync_item_despawn.item_index	Item Index	FT_INT16
+terraria.sync_items_with_shimmer_deprecated.data	Data	FT_BYTES
+terraria.sync_loadout.hidden_accessories	Hidden Accessories	FT_UINT16
+terraria.sync_loadout.loadout_index	Loadout Index	FT_UINT8
+terraria.sync_loadout.player_id	Player ID	FT_UINT8
+terraria.sync_npc.ai	AI	FT_BYTES
+terraria.sync_npc.ai0	AI 0	FT_FLOAT
+terraria.sync_npc.ai1	AI 1	FT_FLOAT
+terraria.sync_npc.ai2	AI 2	FT_FLOAT
+terraria.sync_npc.ai3	AI 3	FT_FLOAT
+terraria.sync_npc.difficulty_player_count	Difficulty Player Count	FT_UINT8
+terraria.sync_npc.flags1	NPC Flags 1	FT_UINT8
+terraria.sync_npc.flags2	NPC Flags 2	FT_UINT8
+terraria.sync_npc.generation	Generation	FT_UINT8
+terraria.sync_npc.life	Life	FT_INT32
+terraria.sync_npc.life_bytes	Life Bytes	FT_UINT8
+terraria.sync_npc.life_group	Life	FT_BYTES
+terraria.sync_npc.life_raw	Raw Life	FT_BYTES
+terraria.sync_npc.npc_index	NPC Index	FT_UINT8
+terraria.sync_npc.npc_net_id	NPC Net ID	FT_INT16
+terraria.sync_npc.position	Position	FT_BYTES
+terraria.sync_npc.position_x	Position X	FT_FLOAT
+terraria.sync_npc.position_y	Position Y	FT_FLOAT
+terraria.sync_npc.release_owner	Release Owner	FT_UINT8
+terraria.sync_npc.root	NPC Update	FT_BYTES
+terraria.sync_npc.strength_multiplier	Strength Multiplier	FT_FLOAT
+terraria.sync_npc.target	Target	FT_UINT16
+terraria.sync_npc.velocity	Velocity	FT_BYTES
+terraria.sync_npc.velocity_x	Velocity X	FT_FLOAT
+terraria.sync_npc.velocity_y	Velocity Y	FT_FLOAT
+terraria.sync_player.consumable_flags	Consumable Flags	FT_UINT8
+terraria.sync_player.difficulty_flags	Difficulty Flags	FT_UINT8
+terraria.sync_player.eye_color	Eye Color	FT_BYTES
+terraria.sync_player.hair	Hair	FT_UINT8
+terraria.sync_player.hair_color	Hair Color	FT_BYTES
+terraria.sync_player.hair_dye	Hair Dye	FT_UINT8
+terraria.sync_player.hide_misc	Hide Misc	FT_UINT8
+terraria.sync_player.hide_visuals	Hidden Accessories	FT_UINT16
+terraria.sync_player.name	Name	FT_STRING
+terraria.sync_player.pants_color	Pants Color	FT_BYTES
+terraria.sync_player.player_id	Player ID	FT_UINT8
+terraria.sync_player.shirt_color	Shirt Color	FT_BYTES
+terraria.sync_player.shoe_color	Shoe Color	FT_BYTES
+terraria.sync_player.skin_color	Skin Color	FT_BYTES
+terraria.sync_player.skin_variant	Skin Variant	FT_UINT8
+terraria.sync_player.torch_flags	Torch Flags	FT_UINT8
+terraria.sync_player.under_shirt_color	Under Shirt Color	FT_BYTES
+terraria.sync_player.voice_pitch_offset	Voice Pitch Offset	FT_FLOAT
+terraria.sync_player.voice_variant	Voice Variant	FT_UINT8
+terraria.sync_player_chest.active_chest	Active Chest	FT_BYTES
+terraria.sync_player_chest.chest_id	Chest ID	FT_INT16
+terraria.sync_player_chest.chest_x	Chest X	FT_INT16
+terraria.sync_player_chest.chest_y	Chest Y	FT_INT16
+terraria.sync_player_chest.name	Chest Name	FT_STRING
+terraria.sync_player_chest.name_length	Name Length	FT_UINT8
+terraria.sync_player_chest.position	Chest Position	FT_BYTES
+terraria.sync_player_chest_index.chest	Chest	FT_INT16
+terraria.sync_player_chest_index.player	Player	FT_UINT8
+terraria.sync_player_zone.player_id	Player ID	FT_UINT8
+terraria.sync_player_zone.town_npcs	Nearby Town NPCs	FT_UINT8
+terraria.sync_player_zone.zone_1	Zone Flags 1	FT_UINT8
+terraria.sync_player_zone.zone_2	Zone Flags 2	FT_UINT8
+terraria.sync_player_zone.zone_3	Zone Flags 3	FT_UINT8
+terraria.sync_player_zone.zone_4	Zone Flags 4	FT_UINT8
+terraria.sync_player_zone.zone_5	Zone Flags 5	FT_UINT8
+terraria.sync_projectile.ai0	AI 0	FT_FLOAT
+terraria.sync_projectile.ai1	AI 1	FT_FLOAT
+terraria.sync_projectile.ai2	AI 2	FT_FLOAT
+terraria.sync_projectile.banner	Banner ID To Respond To	FT_UINT16
+terraria.sync_projectile.damage	Damage	FT_INT16
+terraria.sync_projectile.flags	Projectile Flags	FT_UINT8
+terraria.sync_projectile.flags2	Projectile Flags 2	FT_UINT8
+terraria.sync_projectile.generation	Generation	FT_UINT32
+terraria.sync_projectile.index	Index	FT_UINT32
+terraria.sync_projectile.key	Projectile Key	FT_UINT32
+terraria.sync_projectile.knockback	Knockback	FT_FLOAT
+terraria.sync_projectile.original_damage	Original Damage	FT_INT16
+terraria.sync_projectile.owner	Owner	FT_UINT32
+terraria.sync_projectile.position	Position	FT_BYTES
+terraria.sync_projectile.position_x	Position X	FT_FLOAT
+terraria.sync_projectile.position_y	Position Y	FT_FLOAT
+terraria.sync_projectile.projectile_type	Type	FT_INT16
+terraria.sync_projectile.root	Projectile Update	FT_BYTES
+terraria.sync_projectile.velocity	Velocity	FT_BYTES
+terraria.sync_projectile.velocity_x	Velocity X	FT_FLOAT
+terraria.sync_projectile.velocity_y	Velocity Y	FT_FLOAT
+terraria.sync_projectile_trackers.data	Data	FT_BYTES
+terraria.sync_revenge_marker.base_value	Base Value	FT_FLOAT
+terraria.sync_revenge_marker.coin_value	Coin Value	FT_INT32
+terraria.sync_revenge_marker.npc_ai	NPC AI	FT_INT32
+terraria.sync_revenge_marker.npc_hp_percent	NPC HP Percent	FT_FLOAT
+terraria.sync_revenge_marker.npc_id	NPC ID	FT_INT32
+terraria.sync_revenge_marker.npc_type	NPC Type	FT_INT32
+terraria.sync_revenge_marker.spawned_from_statue	Spawned From Statue	FT_BOOLEAN
+terraria.sync_revenge_marker.unique_id	Unique ID	FT_INT32
+terraria.sync_revenge_marker.x	X	FT_FLOAT
+terraria.sync_revenge_marker.y	Y	FT_FLOAT
+terraria.sync_talk_npc.npc_talk_target	NPC Talk Target	FT_INT16
+terraria.sync_talk_npc.player_id	Player ID	FT_UINT8
+terraria.sync_tile_paint_or_coating.coating	Is Coating	FT_BOOLEAN
+terraria.sync_tile_paint_or_coating.color	Color	FT_UINT8
+terraria.sync_tile_paint_or_coating.x	X	FT_INT16
+terraria.sync_tile_paint_or_coating.y	Y	FT_INT16
+terraria.sync_tile_picking.pick_damage	Pick Damage	FT_UINT8
+terraria.sync_tile_picking.player_id	Player ID	FT_UINT8
+terraria.sync_tile_picking.x	X	FT_INT16
+terraria.sync_tile_picking.y	Y	FT_INT16
+terraria.sync_wall_paint_or_coating.coating	Is Coating	FT_BOOLEAN
+terraria.sync_wall_paint_or_coating.color	Color	FT_UINT8
+terraria.sync_wall_paint_or_coating.x	X	FT_INT16
+terraria.sync_wall_paint_or_coating.y	Y	FT_INT16
+terraria.tamper_with_npc.immunity_player_id	Immunity Player ID	FT_INT16
+terraria.tamper_with_npc.immunity_time	Immunity Time	FT_INT32
+terraria.tamper_with_npc.npc_id	NPC ID	FT_UINT16
+terraria.tamper_with_npc.set_npc_immunity	Set NPC Immunity	FT_BOOLEAN
+terraria.te_display_doll_data_sync.command	Command	FT_UINT8
+terraria.te_display_doll_data_sync.item_id	Item ID	FT_UINT16
+terraria.te_display_doll_data_sync.item_index	Item Index	FT_UINT8
+terraria.te_display_doll_data_sync.player_id	Player ID	FT_UINT8
+terraria.te_display_doll_data_sync.pose	Pose	FT_UINT8
+terraria.te_display_doll_data_sync.prefix	Prefix	FT_UINT8
+terraria.te_display_doll_data_sync.stack	Stack	FT_UINT16
+terraria.te_display_doll_data_sync.tile_entity_id	Tile Entity ID	FT_INT32
+terraria.te_hat_rack_item_sync.item_id	Item ID	FT_UINT16
+terraria.te_hat_rack_item_sync.item_index	Item Index	FT_UINT8
+terraria.te_hat_rack_item_sync.player_id	Player ID	FT_UINT8
+terraria.te_hat_rack_item_sync.prefix	Prefix	FT_UINT8
+terraria.te_hat_rack_item_sync.stack	Stack	FT_UINT16
+terraria.te_hat_rack_item_sync.tile_entity_id	Tile Entity ID	FT_INT32
+terraria.te_leashed_entity_anchor_place_item.item_id	Item ID	FT_INT16
+terraria.te_leashed_entity_anchor_place_item.x	X	FT_INT16
+terraria.te_leashed_entity_anchor_place_item.y	Y	FT_INT16
+terraria.team_change.player_id	Player ID	FT_UINT8
+terraria.team_change.team	Team	FT_UINT8
+terraria.teleport_entity.extra_info	Extra Info	FT_INT32
+terraria.teleport_entity.flags	Flags	FT_UINT8
+terraria.teleport_entity.style	Style	FT_UINT8
+terraria.teleport_entity.target_id	Target ID	FT_INT16
+terraria.teleport_entity.x	X	FT_FLOAT
+terraria.teleport_entity.y	Y	FT_FLOAT
+terraria.teleport_npc_through_portal.new_position_x	New Position X	FT_FLOAT
+terraria.teleport_npc_through_portal.new_position_y	New Position Y	FT_FLOAT
+terraria.teleport_npc_through_portal.npc_id	NPC ID	FT_UINT16
+terraria.teleport_npc_through_portal.portal_color_index	Portal Color Index	FT_INT16
+terraria.teleport_npc_through_portal.velocity_x	Velocity X	FT_FLOAT
+terraria.teleport_npc_through_portal.velocity_y	Velocity Y	FT_FLOAT
+terraria.teleport_player_through_portal.new_position_x	New Position X	FT_FLOAT
+terraria.teleport_player_through_portal.new_position_y	New Position Y	FT_FLOAT
+terraria.teleport_player_through_portal.player_id	Player ID	FT_UINT8
+terraria.teleport_player_through_portal.portal_color_index	Portal Color Index	FT_INT16
+terraria.teleport_player_through_portal.velocity_x	Velocity X	FT_FLOAT
+terraria.teleport_player_through_portal.velocity_y	Velocity Y	FT_FLOAT
+terraria.temporary_animation.animation_type	Animation Type	FT_INT16
+terraria.temporary_animation.tile_type	Tile Type	FT_UINT16
+terraria.temporary_animation.x	X	FT_INT16
+terraria.temporary_animation.y	Y	FT_INT16
+terraria.tile_entity_placement.tile_entity_type	Tile Entity Type	FT_UINT8
+terraria.tile_entity_placement.x	X	FT_INT16
+terraria.tile_entity_placement.y	Y	FT_INT16
+terraria.tile_entity_sharing.anchor_item	Anchored Item	FT_INT16
+terraria.tile_entity_sharing.dye_flags	Dye Flags	FT_UINT8
+terraria.tile_entity_sharing.equip_flags	Equip Flags	FT_UINT8
+terraria.tile_entity_sharing.extra_data	Extra Data	FT_BYTES
+terraria.tile_entity_sharing.extra_flags	Extra Slot Flags	FT_UINT8
+terraria.tile_entity_sharing.item	Item	FT_BYTES
+terraria.tile_entity_sharing.item_id	Item ID	FT_INT16
+terraria.tile_entity_sharing.item_prefix	Prefix	FT_UINT8
+terraria.tile_entity_sharing.item_stack	Stack	FT_INT16
+terraria.tile_entity_sharing.npc_index	NPC Index	FT_INT16
+terraria.tile_entity_sharing.pose	Pose	FT_UINT8
+terraria.tile_entity_sharing.rack_flags	Slot Flags	FT_UINT8
+terraria.tile_entity_sharing.tile_entity_id	Tile Entity ID	FT_INT32
+terraria.tile_entity_sharing.tile_entity_type	Tile Entity Type	FT_UINT8
+terraria.tile_entity_sharing.update_tile_flag	Entity Present	FT_BOOLEAN
+terraria.tile_entity_sharing.x	X	FT_INT16
+terraria.tile_entity_sharing.y	Y	FT_INT16
+terraria.tile_frame_section.end	End	FT_BYTES
+terraria.tile_frame_section.end_x	End X	FT_INT16
+terraria.tile_frame_section.end_y	End Y	FT_INT16
+terraria.tile_frame_section.start	Start	FT_BYTES
+terraria.tile_frame_section.start_x	Start X	FT_INT16
+terraria.tile_frame_section.start_y	Start Y	FT_INT16
+terraria.tile_manipulation.action	Action	FT_UINT8
+terraria.tile_manipulation.flags1	Flags 1	FT_INT16
+terraria.tile_manipulation.flags2	Flags 2	FT_UINT8
+terraria.tile_manipulation.tile_x	Tile X	FT_INT16
+terraria.tile_manipulation.tile_y	Tile Y	FT_INT16
+terraria.tile_section.compressed	Compressed	FT_BOOLEAN
+terraria.tile_section.data	Section Data	FT_BYTES
+terraria.toggle_door_state.action	Action	FT_UINT8
+terraria.toggle_door_state.direction	Direction	FT_UINT8
+terraria.toggle_door_state.position	Tile Position	FT_BYTES
+terraria.toggle_door_state.tile_x	Tile X	FT_INT16
+terraria.toggle_door_state.tile_y	Tile Y	FT_INT16
+terraria.toggle_pvp.enabled	PVP Enabled	FT_BOOLEAN
+terraria.toggle_pvp.player_id	Player ID	FT_UINT8
+terraria.travel_merchant_items.item_01	Item 01	FT_INT16
+terraria.travel_merchant_items.item_02	Item 02	FT_INT16
+terraria.travel_merchant_items.item_03	Item 03	FT_INT16
+terraria.travel_merchant_items.item_04	Item 04	FT_INT16
+terraria.travel_merchant_items.item_05	Item 05	FT_INT16
+terraria.travel_merchant_items.item_06	Item 06	FT_INT16
+terraria.travel_merchant_items.item_07	Item 07	FT_INT16
+terraria.travel_merchant_items.item_08	Item 08	FT_INT16
+terraria.travel_merchant_items.item_09	Item 09	FT_INT16
+terraria.travel_merchant_items.item_10	Item 10	FT_INT16
+terraria.travel_merchant_items.item_11	Item 11	FT_INT16
+terraria.travel_merchant_items.item_12	Item 12	FT_INT16
+terraria.travel_merchant_items.item_13	Item 13	FT_INT16
+terraria.travel_merchant_items.item_14	Item 14	FT_INT16
+terraria.travel_merchant_items.item_15	Item 15	FT_INT16
+terraria.travel_merchant_items.item_16	Item 16	FT_INT16
+terraria.travel_merchant_items.item_17	Item 17	FT_INT16
+terraria.travel_merchant_items.item_18	Item 18	FT_INT16
+terraria.travel_merchant_items.item_19	Item 19	FT_INT16
+terraria.travel_merchant_items.item_20	Item 20	FT_INT16
+terraria.travel_merchant_items.item_21	Item 21	FT_INT16
+terraria.travel_merchant_items.item_22	Item 22	FT_INT16
+terraria.travel_merchant_items.item_23	Item 23	FT_INT16
+terraria.travel_merchant_items.item_24	Item 24	FT_INT16
+terraria.travel_merchant_items.item_25	Item 25	FT_INT16
+terraria.travel_merchant_items.item_26	Item 26	FT_INT16
+terraria.travel_merchant_items.item_27	Item 27	FT_INT16
+terraria.travel_merchant_items.item_28	Item 28	FT_INT16
+terraria.travel_merchant_items.item_29	Item 29	FT_INT16
+terraria.travel_merchant_items.item_30	Item 30	FT_INT16
+terraria.travel_merchant_items.item_31	Item 31	FT_INT16
+terraria.travel_merchant_items.item_32	Item 32	FT_INT16
+terraria.travel_merchant_items.item_33	Item 33	FT_INT16
+terraria.travel_merchant_items.item_34	Item 34	FT_INT16
+terraria.travel_merchant_items.item_35	Item 35	FT_INT16
+terraria.travel_merchant_items.item_36	Item 36	FT_INT16
+terraria.travel_merchant_items.item_37	Item 37	FT_INT16
+terraria.travel_merchant_items.item_38	Item 38	FT_INT16
+terraria.travel_merchant_items.item_39	Item 39	FT_INT16
+terraria.travel_merchant_items.item_40	Item 40	FT_INT16
+terraria.travel_merchant_items.items	Items	FT_BYTES
+terraria.unique_town_npc_info_sync_request.name	Name	FT_STRING
+terraria.unique_town_npc_info_sync_request.npc_id	NPC ID	FT_INT16
+terraria.unique_town_npc_info_sync_request.town_npc_variation_index	Town NPC Variation Index	FT_INT32
+terraria.unused83.data	Data	FT_BYTES
+terraria.unused_melee_strike.npc_id	NPC ID	FT_INT16
+terraria.unused_melee_strike.player_id	Player ID	FT_UINT8
+terraria.update_player_luck_factors.broken_mirror_bad_luck	Broken Mirror Bad Luck	FT_BOOLEAN
+terraria.update_player_luck_factors.coin_luck	Coin Luck	FT_FLOAT
+terraria.update_player_luck_factors.equipment_bonus	Equipment Luck Bonus	FT_FLOAT
+terraria.update_player_luck_factors.has_garden_gnome_nearby	Has Garden Gnome Nearby	FT_BOOLEAN
+terraria.update_player_luck_factors.kite_luck_level	Kite Luck Level	FT_UINT8
+terraria.update_player_luck_factors.ladybug_luck_time_remaining	Ladybug Luck Time Remaining	FT_INT32
+terraria.update_player_luck_factors.luck_potion	Luck Potion	FT_UINT8
+terraria.update_player_luck_factors.player_id	Player ID	FT_UINT8
+terraria.update_player_luck_factors.torch_luck	Torch Luck	FT_FLOAT
+terraria.update_tower_shield_strengths.nebula	Nebula Tower Shield Strength	FT_UINT16
+terraria.update_tower_shield_strengths.solar	Solar Tower Shield Strength	FT_UINT16
+terraria.update_tower_shield_strengths.stardust	Stardust Tower Shield Strength	FT_UINT16
+terraria.update_tower_shield_strengths.vortex	Vortex Tower Shield Strength	FT_UINT16
+terraria.weapons_rack_try_placing.net_id	Net ID	FT_INT16
+terraria.weapons_rack_try_placing.prefix	Prefix	FT_UINT8
+terraria.weapons_rack_try_placing.stack	Stack	FT_INT16
+terraria.weapons_rack_try_placing.x	X	FT_INT16
+terraria.weapons_rack_try_placing.y	Y	FT_INT16
+terraria.wired_cannon_shot.ammo	Ammo	FT_INT16
+terraria.wired_cannon_shot.angle	Angle	FT_INT16
+terraria.wired_cannon_shot.damage	Damage	FT_INT16
+terraria.wired_cannon_shot.knockback	Knockback	FT_FLOAT
+terraria.wired_cannon_shot.player_id	Player ID	FT_UINT8
+terraria.wired_cannon_shot.x	X	FT_INT16
+terraria.wired_cannon_shot.y	Y	FT_INT16
+terraria.world_data.adamantite_ore	Adamantite Ore Tier	FT_INT16
+terraria.world_data.background_0	Background Style 0	FT_UINT8
+terraria.world_data.background_1	Background Style 1	FT_UINT8
+terraria.world_data.background_10	Background Style 10	FT_UINT8
+terraria.world_data.background_11	Background Style 11	FT_UINT8
+terraria.world_data.background_12	Background Style 12	FT_UINT8
+terraria.world_data.background_2	Background Style 2	FT_UINT8
+terraria.world_data.background_3	Background Style 3	FT_UINT8
+terraria.world_data.background_4	Background Style 4	FT_UINT8
+terraria.world_data.background_5	Background Style 5	FT_UINT8
+terraria.world_data.background_6	Background Style 6	FT_UINT8
+terraria.world_data.background_7	Background Style 7	FT_UINT8
+terraria.world_data.background_8	Background Style 8	FT_UINT8
+terraria.world_data.background_9	Background Style 9	FT_UINT8
+terraria.world_data.backgrounds	Backgrounds	FT_BYTES
+terraria.world_data.blood_moon	Blood Moon	FT_BOOLEAN
+terraria.world_data.cave_back_1	Cave Back X 1	FT_INT32
+terraria.world_data.cave_back_2	Cave Back X 2	FT_INT32
+terraria.world_data.cave_back_3	Cave Back X 3	FT_INT32
+terraria.world_data.cave_style_1	Cave Back Style 1	FT_UINT8
+terraria.world_data.cave_style_2	Cave Back Style 2	FT_UINT8
+terraria.world_data.cave_style_3	Cave Back Style 3	FT_UINT8
+terraria.world_data.cave_style_4	Cave Back Style 4	FT_UINT8
+terraria.world_data.cloud_number	Cloud Number	FT_UINT8
+terraria.world_data.cobalt_ore	Cobalt Ore Tier	FT_INT16
+terraria.world_data.copper_ore	Copper Ore Tier	FT_INT16
+terraria.world_data.day_moon_info	Day and Moon Info	FT_UINT8
+terraria.world_data.day_time	Day Time	FT_BOOLEAN
+terraria.world_data.dungeon	Dungeon Position	FT_BYTES
+terraria.world_data.dungeon_x	Dungeon X	FT_INT16
+terraria.world_data.dungeon_y	Dungeon Y	FT_INT16
+terraria.world_data.eclipse	Eclipse	FT_BOOLEAN
+terraria.world_data.events	Events	FT_BYTES
+terraria.world_data.extra_spawn	Extra Spawn Point	FT_BYTES
+terraria.world_data.extra_spawn_count	Extra Spawn Point Count	FT_UINT8
+terraria.world_data.extra_spawn_x	X	FT_INT16
+terraria.world_data.extra_spawn_y	Y	FT_INT16
+terraria.world_data.extra_spawns	Extra Spawn Points	FT_BYTES
+terraria.world_data.flag.army_ongoing	Army Ongoing	FT_BOOLEAN
+terraria.world_data.flag.bought_bunny	Bought Bunny	FT_BOOLEAN
+terraria.world_data.flag.bought_cat	Bought Cat	FT_BOOLEAN
+terraria.world_data.flag.bought_dog	Bought Dog	FT_BOOLEAN
+terraria.world_data.flag.christmas_today	Christmas Today	FT_BOOLEAN
+terraria.world_data.flag.cloud_background	Cloud Background	FT_BOOLEAN
+terraria.world_data.flag.combat_book_two_used	Combat Book Two Used	FT_BOOLEAN
+terraria.world_data.flag.combat_book_used	Combat Book Used	FT_BOOLEAN
+terraria.world_data.flag.crimson	Crimson	FT_BOOLEAN
+terraria.world_data.flag.dont_starve	Dont Starve	FT_BOOLEAN
+terraria.world_data.flag.downed_ancient_cultist	Downed Ancient Cultist	FT_BOOLEAN
+terraria.world_data.flag.downed_army_tier1	Downed Army Tier1	FT_BOOLEAN
+terraria.world_data.flag.downed_army_tier2	Downed Army Tier2	FT_BOOLEAN
+terraria.world_data.flag.downed_army_tier3	Downed Army Tier3	FT_BOOLEAN
+terraria.world_data.flag.downed_boss1	Downed Boss1	FT_BOOLEAN
+terraria.world_data.flag.downed_boss2	Downed Boss2	FT_BOOLEAN
+terraria.world_data.flag.downed_boss3	Downed Boss3	FT_BOOLEAN
+terraria.world_data.flag.downed_christmas_ice_queen	Downed Christmas Ice Queen	FT_BOOLEAN
+terraria.world_data.flag.downed_christmas_santank	Downed Christmas Santank	FT_BOOLEAN
+terraria.world_data.flag.downed_christmas_tree	Downed Christmas Tree	FT_BOOLEAN
+terraria.world_data.flag.downed_clown	Downed Clown	FT_BOOLEAN
+terraria.world_data.flag.downed_deerclops	Downed Deerclops	FT_BOOLEAN
+terraria.world_data.flag.downed_empress_of_light	Downed Empress Of Light	FT_BOOLEAN
+terraria.world_data.flag.downed_fishron	Downed Fishron	FT_BOOLEAN
+terraria.world_data.flag.downed_frost_legion	Downed Frost Legion	FT_BOOLEAN
+terraria.world_data.flag.downed_goblins	Downed Goblins	FT_BOOLEAN
+terraria.world_data.flag.downed_golem	Downed Golem	FT_BOOLEAN
+terraria.world_data.flag.downed_halloween_king	Downed Halloween King	FT_BOOLEAN
+terraria.world_data.flag.downed_halloween_tree	Downed Halloween Tree	FT_BOOLEAN
+terraria.world_data.flag.downed_king_slime	Downed King Slime	FT_BOOLEAN
+terraria.world_data.flag.downed_martians	Downed Martians	FT_BOOLEAN
+terraria.world_data.flag.downed_mech1	Downed Mech1	FT_BOOLEAN
+terraria.world_data.flag.downed_mech2	Downed Mech2	FT_BOOLEAN
+terraria.world_data.flag.downed_mech3	Downed Mech3	FT_BOOLEAN
+terraria.world_data.flag.downed_mech_any	Downed Mech Any	FT_BOOLEAN
+terraria.world_data.flag.downed_moon_lord	Downed Moon Lord	FT_BOOLEAN
+terraria.world_data.flag.downed_pirates	Downed Pirates	FT_BOOLEAN
+terraria.world_data.flag.downed_plantera	Downed Plantera	FT_BOOLEAN
+terraria.world_data.flag.downed_queen_bee	Downed Queen Bee	FT_BOOLEAN
+terraria.world_data.flag.downed_queen_slime	Downed Queen Slime	FT_BOOLEAN
+terraria.world_data.flag.downed_tower_nebula	Downed Tower Nebula	FT_BOOLEAN
+terraria.world_data.flag.downed_tower_solar	Downed Tower Solar	FT_BOOLEAN
+terraria.world_data.flag.downed_tower_stardust	Downed Tower Stardust	FT_BOOLEAN
+terraria.world_data.flag.downed_tower_vortex	Downed Tower Vortex	FT_BOOLEAN
+terraria.world_data.flag.drunk_world	Drunk World	FT_BOOLEAN
+terraria.world_data.flag.fast_forward_to_dawn	Fast Forward To Dawn	FT_BOOLEAN
+terraria.world_data.flag.fast_forward_to_dusk	Fast Forward To Dusk	FT_BOOLEAN
+terraria.world_data.flag.free_cake	Free Cake	FT_BOOLEAN
+terraria.world_data.flag.get_good_world	Get Good World	FT_BOOLEAN
+terraria.world_data.flag.halloween_today	Halloween Today	FT_BOOLEAN
+terraria.world_data.flag.hard_mode	Hard Mode	FT_BOOLEAN
+terraria.world_data.flag.lantern_night	Lantern Night	FT_BOOLEAN
+terraria.world_data.flag.not_the_bees	Not The Bees	FT_BOOLEAN
+terraria.world_data.flag.party_is_up	Party Is Up	FT_BOOLEAN
+terraria.world_data.flag.pumpkin_moon	Pumpkin Moon	FT_BOOLEAN
+terraria.world_data.flag.remix_world	Remix World	FT_BOOLEAN
+terraria.world_data.flag.sandstorm	Sandstorm	FT_BOOLEAN
+terraria.world_data.flag.server_side_character	Server Side Character	FT_BOOLEAN
+terraria.world_data.flag.shadow_orb_smashed	Shadow Orb Smashed	FT_BOOLEAN
+terraria.world_data.flag.slime_rain	Slime Rain	FT_BOOLEAN
+terraria.world_data.flag.snow_moon	Snow Moon	FT_BOOLEAN
+terraria.world_data.flag.tenth_anniversary	Tenth Anniversary	FT_BOOLEAN
+terraria.world_data.flag.unlocked_slime_blue_spawn	Unlocked Slime Blue Spawn	FT_BOOLEAN
+terraria.world_data.flag.unlocked_slime_copper_spawn	Unlocked Slime Copper Spawn	FT_BOOLEAN
+terraria.world_data.flag.unlocked_slime_green_spawn	Unlocked Slime Green Spawn	FT_BOOLEAN
+terraria.world_data.flag.unlocked_slime_old_spawn	Unlocked Slime Old Spawn	FT_BOOLEAN
+terraria.world_data.flag.unlocked_slime_purple_spawn	Unlocked Slime Purple Spawn	FT_BOOLEAN
+terraria.world_data.flag.unlocked_slime_rainbow_spawn	Unlocked Slime Rainbow Spawn	FT_BOOLEAN
+terraria.world_data.flag.unlocked_slime_red_spawn	Unlocked Slime Red Spawn	FT_BOOLEAN
+terraria.world_data.flag.unlocked_slime_yellow_spawn	Unlocked Slime Yellow Spawn	FT_BOOLEAN
+terraria.world_data.flags_1	World Flags 1	FT_UINT8
+terraria.world_data.flags_10	World Flags 10	FT_UINT8
+terraria.world_data.flags_11	World Flags 11	FT_UINT8
+terraria.world_data.flags_2	World Flags 2	FT_UINT8
+terraria.world_data.flags_3	World Flags 3	FT_UINT8
+terraria.world_data.flags_4	World Flags 4	FT_UINT8
+terraria.world_data.flags_5	World Flags 5	FT_UINT8
+terraria.world_data.flags_6	World Flags 6	FT_UINT8
+terraria.world_data.flags_7	World Flags 7	FT_UINT8
+terraria.world_data.flags_8	World Flags 8	FT_UINT8
+terraria.world_data.flags_9	World Flags 9	FT_UINT8
+terraria.world_data.game_mode	Game Mode	FT_UINT8
+terraria.world_data.generator_version	World Generator Version	FT_UINT64
+terraria.world_data.geometry	Geometry	FT_BYTES
+terraria.world_data.gold_ore	Gold Ore Tier	FT_INT16
+terraria.world_data.hell_back_style	Hell Back Style	FT_UINT8
+terraria.world_data.ice_back_style	Ice Back Style	FT_UINT8
+terraria.world_data.identity	Identity	FT_BYTES
+terraria.world_data.invasion_type	Invasion Type	FT_INT8
+terraria.world_data.iron_ore	Iron Ore Tier	FT_INT16
+terraria.world_data.jungle_back_style	Jungle Back Style	FT_UINT8
+terraria.world_data.lobby_id	Lobby ID	FT_UINT64
+terraria.world_data.max_tiles_x	Max Tiles X	FT_INT16
+terraria.world_data.max_tiles_y	Max Tiles Y	FT_INT16
+terraria.world_data.moon_phase	Moon Phase	FT_UINT8
+terraria.world_data.moon_type	Moon Type	FT_UINT8
+terraria.world_data.moondial_cooldown	Moondial Cooldown	FT_UINT8
+terraria.world_data.mythril_ore	Mythril Ore Tier	FT_INT16
+terraria.world_data.ore_tiers	Ore Tiers	FT_BYTES
+terraria.world_data.rain	Max Raining	FT_FLOAT
+terraria.world_data.rock_layer	Rock Layer	FT_INT16
+terraria.world_data.sandstorm_severity	Sandstorm Severity	FT_FLOAT
+terraria.world_data.silver_ore	Silver Ore Tier	FT_INT16
+terraria.world_data.spawn_x	Spawn X	FT_INT16
+terraria.world_data.spawn_y	Spawn Y	FT_INT16
+terraria.world_data.sundial_cooldown	Sundial Cooldown	FT_UINT8
+terraria.world_data.time	Time	FT_INT32
+terraria.world_data.time_state	Time State	FT_BYTES
+terraria.world_data.tree_1	Tree X 1	FT_INT32
+terraria.world_data.tree_2	Tree X 2	FT_INT32
+terraria.world_data.tree_3	Tree X 3	FT_INT32
+terraria.world_data.tree_layout	Tree Layout	FT_BYTES
+terraria.world_data.tree_style_1	Tree Style 1	FT_UINT8
+terraria.world_data.tree_style_2	Tree Style 2	FT_UINT8
+terraria.world_data.tree_style_3	Tree Style 3	FT_UINT8
+terraria.world_data.tree_style_4	Tree Style 4	FT_UINT8
+terraria.world_data.tree_top_1	Tree Top Style 1	FT_UINT8
+terraria.world_data.tree_top_10	Tree Top Style 10	FT_UINT8
+terraria.world_data.tree_top_11	Tree Top Style 11	FT_UINT8
+terraria.world_data.tree_top_12	Tree Top Style 12	FT_UINT8
+terraria.world_data.tree_top_13	Tree Top Style 13	FT_UINT8
+terraria.world_data.tree_top_2	Tree Top Style 2	FT_UINT8
+terraria.world_data.tree_top_3	Tree Top Style 3	FT_UINT8
+terraria.world_data.tree_top_4	Tree Top Style 4	FT_UINT8
+terraria.world_data.tree_top_5	Tree Top Style 5	FT_UINT8
+terraria.world_data.tree_top_6	Tree Top Style 6	FT_UINT8
+terraria.world_data.tree_top_7	Tree Top Style 7	FT_UINT8
+terraria.world_data.tree_top_8	Tree Top Style 8	FT_UINT8
+terraria.world_data.tree_top_9	Tree Top Style 9	FT_UINT8
+terraria.world_data.tree_tops	Tree Tops	FT_BYTES
+terraria.world_data.unique_id	World Unique ID	FT_GUID
+terraria.world_data.wind_speed	Wind Speed Target	FT_FLOAT
+terraria.world_data.world_flags	World Flags	FT_BYTES
+terraria.world_data.world_id	World ID	FT_INT32
+terraria.world_data.world_name	World Name	FT_STRING
+terraria.world_data.world_surface	World Surface	FT_INT16
+terraria.world_evil_tally.crimson	Crimson	FT_UINT8
+terraria.world_evil_tally.evil	Evil	FT_UINT8
+terraria.world_evil_tally.good	Good	FT_UINT8
