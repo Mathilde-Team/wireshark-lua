@@ -1,0 +1,2 @@
+# SyncNPC (23): index + generation, two AI slots, scaled stats, 2-byte life
+0000 2b 00 17 07 03 00 00 c8 42 00 00 48 43 00 00 00 00 00 00 00 00 ff 00 0d 05 00 00 80 3f 00 00 00 c0 04 00 02 00 00 c0 3f 02 dc 05

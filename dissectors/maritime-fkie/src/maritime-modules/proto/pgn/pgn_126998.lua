@@ -1,0 +1,49 @@
+-- SPDX-License-Identifier: LicenseRef-FKIE-MIT-supplemented
+-- Importé de https://github.com/fkie-cad/maritime-dissector,
+-- commit 8fdd466580ef6279971a9090c542284ea7959869 du 24/03/2026 (maritime-modules/proto/pgn/pgn_126998.lua).
+-- Licence amont : MIT complétée par Fraunhofer FKIE (LICENSE amont) — voir README.md.
+
+-- prevent wireshark loading this file as plugin
+if not _G['maritimedissector'] then return end
+
+-- WARNING: This file is generated automatically by ./pgn.py --
+
+NMEA_2000_126998 = Proto("nmea-2000-126998", "Configuration Information (126998)")
+local installationDescription1 = ProtoField.string("nmea-2000-126998.installationDescription1", "Installation Description #1")
+local installationDescription2 = ProtoField.string("nmea-2000-126998.installationDescription2", "Installation Description #2")
+local manufacturerInformation = ProtoField.string("nmea-2000-126998.manufacturerInformation", "Manufacturer Information")
+
+NMEA_2000_126998.fields = {installationDescription1,installationDescription2,manufacturerInformation}
+
+function NMEA_2000_126998.dissector(buffer, pinfo, tree)
+    local subtree_title = "PGN 126998 (Configuration Information)"
+    local subtree = tree:add(NMEA_2000_126998, buffer(), subtree_title)
+    local str_offset = 0
+
+    if buffer:len() >= (str_offset + 1) then
+        length = buffer(str_offset, 1):uint() - 2
+        if length and length >= 0 and buffer:len() >= (str_offset + 2 + length) then
+            -- type = buffer(str_offset + 1, 1):uint() --0 Unicode, 1 ASCII (ignored)
+            subtree:add(installationDescription1, buffer(str_offset + 2, length))
+            str_offset = str_offset + length + 2
+        end
+    end
+    if buffer:len() >= (str_offset + 1) then
+        length = buffer(str_offset, 1):uint() - 2
+        if length and length >= 0 and buffer:len() >= (str_offset + 2 + length) then
+            -- type = buffer(str_offset + 1, 1):uint() --0 Unicode, 1 ASCII (ignored)
+            subtree:add(installationDescription2, buffer(str_offset + 2, length))
+            str_offset = str_offset + length + 2
+        end
+    end
+    if buffer:len() >= (str_offset + 1) then
+        length = buffer(str_offset, 1):uint() - 2
+        if length and length >= 0 and buffer:len() >= (str_offset + 2 + length) then
+            -- type = buffer(str_offset + 1, 1):uint() --0 Unicode, 1 ASCII (ignored)
+            subtree:add(manufacturerInformation, buffer(str_offset + 2, length))
+            str_offset = str_offset + length + 2
+        end
+    end
+end
+
+return NMEA_2000_126998

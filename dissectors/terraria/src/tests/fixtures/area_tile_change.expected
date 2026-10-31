@@ -1,0 +1,29 @@
+1	Terraria AreaTileChange id=20 len=29
+Terraria AreaTileChange
+    Frame Length: 29
+    Packet ID: AreaTileChange (20)
+    Payload
+        Area Tile Change: 6400c8000201000508001b150024001200040009000000008000
+            Header: 6400c800020100
+                Tile X: 100
+                Tile Y: 200
+                Width: 2
+                Height: 1
+                Tile Change Type: 0
+            Tiles: 0508001b150024001200040009000000008000
+                Tile (100, 200)
+                    Flags 1: 0x05
+                    Flags 2: 0x08
+                    Flags 3: 0x00
+                    Wall Color: 27
+                    Tile Type: 21
+                    Frame X: 36
+                    Frame Y: 18
+                    Wall Type: 4
+                Tile (101, 200)
+                    Flags 1: 0x09
+                    Flags 2: 0x00
+                    Flags 3: 0x00
+                    Tile Type: 0
+                    Liquid Amount: 128
+                    Liquid Type: 0

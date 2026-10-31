@@ -1,0 +1,13 @@
+1	Terraria PlayerHurtV2 id=117 len=12
+Terraria PlayerHurtV2
+    Frame Length: 12
+    Packet ID: PlayerHurtV2 (117)
+    Payload
+        Player ID: 0
+        Death Reason: 020500
+            Death Reason Flags: 0x02
+            Killer NPC Index: 5
+        Damage: 10
+        Hit Direction: 1
+        Flags: 0x00
+        Cooldown Counter: 0

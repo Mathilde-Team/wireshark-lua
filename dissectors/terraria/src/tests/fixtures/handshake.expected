@@ -1,0 +1,61 @@
+1	Terraria Hello id=1 len=15
+2	Terraria PlayerInfo id=3 len=5
+3	Terraria SyncPlayer id=4 len=44
+4	Terraria SyncEquipment id=5 len=12
+5	Terraria SpawnTileData id=8 len=12
+Terraria Hello
+    Frame Length: 15
+    Packet ID: Hello (1)
+    Payload
+        Client Version: Terraria326
+Terraria PlayerInfo
+    Frame Length: 5
+    Packet ID: PlayerInfo (3)
+    Payload
+        Player ID: 2
+        Check Bytes In Client Loop: True
+Terraria SyncPlayer
+    Frame Length: 44
+    Packet ID: SyncPlayer (4)
+    Payload
+        Player ID: 2
+        Skin Variant: 3
+        Voice Variant: 1
+        Voice Pitch Offset: 0.5
+        Hair: 53
+        Name: Kris
+        Hair Dye: 0
+        Hidden Accessories: 0x0102
+        Hide Misc: 0x00
+        Hair Color: 000102
+        Skin Color: 030405
+        Eye Color: 060708
+        Shirt Color: 090a0b
+        Under Shirt Color: 0c0d0e
+        Pants Color: 0f1011
+        Shoe Color: 121314
+        Difficulty Flags: 0x01
+        Torch Flags: 0x02
+        Consumable Flags: 0x04
+Terraria SyncEquipment
+    Frame Length: 12
+    Packet ID: SyncEquipment (5)
+    Payload
+        Slot: 023101
+            Player ID: 2
+            Slot ID: 305
+        Item: 630051b30d
+            Stack: 99
+            Prefix: 81
+            Item Net ID: 3507
+        Slot Flags: 0x01
+            .... ...1 = Favorited: True
+            .... ..0. = Blocked: False
+Terraria SpawnTileData
+    Frame Length: 12
+    Packet ID: SpawnTileData (8)
+    Payload
+        Tile Position: 340800002c010000
+            X: 2100
+            Y: 300
+        Team: 1

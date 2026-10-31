@@ -1,0 +1,27 @@
+1	Terraria TileEntitySharing id=86 len=32
+Terraria TileEntitySharing
+    Frame Length: 32
+    Packet ID: TileEntitySharing (86)
+    Payload
+        Tile Entity ID: 9
+        Entity Present: True
+        Tile Entity Type: DisplayDoll (3)
+        X: 50
+        Y: 60
+        Extra Data: 01000403010000010002000001000300000100
+            Equip Flags: 0x01
+            Dye Flags: 0x00
+            Pose: 4
+            Extra Slot Flags: 0x03
+            Equip 1
+                Item ID: 1
+                Prefix: 0
+                Stack: 1
+            Equip 9
+                Item ID: 2
+                Prefix: 0
+                Stack: 1
+            Misc
+                Item ID: 3
+                Prefix: 0
+                Stack: 1

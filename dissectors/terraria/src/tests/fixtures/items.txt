@@ -1,0 +1,9 @@
+# SyncItem (21) with shimmer and grab-delay trailers, SpawnInstancedItem (90) without,
+# ItemOwner (22) with 7-bit reservation fields, ReleaseItemOwnership (39), SyncItemDespawn (151),
+# ItemPosition (160)
+0000 21 00 15 90 01 00 00 20 41 00 00 a0 41 00 00 00 00 00 00 80 3f 05 00 00 0d 49 00 01 00 00 00 3f 1e
+0000 1b 00 5a 0c 00 00 00 20 41 00 00 a0 41 00 00 00 00 00 00 00 00 01 00 00 00 f6 0c
+0000 12 00 16 0c 00 02 ac 02 ff 00 00 00 20 41 00 00 a0 41
+0000 06 00 27 0c 00 00
+0000 05 00 97 0c 00
+0000 0d 00 a0 0c 00 00 00 30 41 00 00 a8 41
