@@ -36,7 +36,7 @@ essentiellement GVSP) n'est pas importée à cause de sa taille.
 
 **Le script ne se charge pas avec Wireshark 4.6.4** : il déclare un
 protocole nommé `gvcp`, déjà pris par le dissecteur natif (« Proto_new:
-there cannot be two protocols with the same name », ligne 2). Utiliser le
+there cannot be two protocols with the same name », ligne 7 de `src/gvcp.lua`, 2 en amont). Utiliser le
 dissecteur natif, bien plus complet (filtre `gvcp`) ; le script n'a plus
 qu'un intérêt historique (ou pour un Wireshark sans dissecteur GVCP natif).
 
