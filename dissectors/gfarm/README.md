@@ -4,7 +4,7 @@ Dissecteurs Wireshark Lua des protocoles de **Gfarm v2**, système de
 fichiers distribué en grille (Université de Tsukuba / AIST) :
 
 - `gfarm-gfm` : protocole entre clients / serveurs de fichiers et le
-  serveur de métadonnées **gfmd** (TCP 601) — plus de 200 noms de
+  serveur de métadonnées **gfmd** (TCP 601) — environ 130 noms de
   commandes `GFM_PROTO_*`, décodage des arguments et des réponses
   (association requête / réponse par numéro de requête), drapeaux des
   hôtes, des fichiers, des réplicas, des serveurs de métadonnées… ;
