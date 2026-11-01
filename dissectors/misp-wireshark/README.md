@@ -15,33 +15,29 @@ avec tshark (`-X lua_script…`). `community-id` nécessite Wireshark ≥ 3.3.1
 | Dépôt amont | https://github.com/MISP/misp-wireshark |
 | Commit importé | `be6d89df62503465d9b92e6839612111ea8fc068` du 23/10/2023 (branche `main`, dernier commit du dépôt, inactif depuis) |
 | Sous-module `lib/LuaMISP` | https://github.com/MISP/LuaMISP, commit `bd80c85bf22c5117b3946fd1b29ceb51fa26677e` du 21/02/2022 (épinglé par l'amont) |
-| Licence amont | plugin : déclaration « AGPLv2 » dans les métadonnées du seul `misp-wireshark.lua`, sans fichier LICENSE amont ni déclaration couvrant les autres fichiers ; LuaMISP : MIT ; détails par fichier ci-dessous |
+| Licence amont | plugin : déclaration « AGPLv2 » dans les métadonnées de `misp-wireshark.lua`, retenue comme **GPL-2.0-only** (décision de Mathilde du 01/11/2026) ; LuaMISP : MIT ; détails par fichier ci-dessous |
 | Natif Wireshark 4.6.4 | sans objet (exporteur, pas un dissecteur) |
 
 Fichiers importés tels quels (aucune modification de code), structure amont
 conservée : le plugin fait `require 'lib.LuaMISP.LuaMISP'`, l'arborescence
 `lib/LuaMISP/` doit donc rester à côté de `misp-wireshark.lua`. Seule une
 en-tête de provenance est ajoutée à chaque fichier (convention du dépôt,
-issue #563) ; elle porte un `SPDX-License-Identifier` pour les fichiers dont
-la licence amont est établie (LuaMISP et ses utilitaires), et constate
-l'absence de licence établie pour les fichiers du plugin.
+issue #563) ; elle porte un `SPDX-License-Identifier` sur chaque fichier.
 
-Note de licence (question posée dans l'issue #9) : le seul élément de licence
-amont est la déclaration `license = "AGPLv2"` dans les métadonnées de
-`misp-wireshark.lua` ; `mispHelper.lua` et `mispWiresharkUtils.lua` ne portent
-aucune mention, et le dépôt n'a pas de fichier LICENSE. Sans texte de licence
-ni déclaration couvrant explicitement ces fichiers, les conditions de
-redistribution ne sont pas établies : l'import est suspendu en attendant la
-réponse (PR #577 en brouillon). Le fichier `LICENSE` de ce dossier est celui de
-LuaMISP (MIT, copie conforme de l'amont).
+Note de licence (#9) : le seul élément de licence amont est la déclaration
+`license = "AGPLv2"` dans les métadonnées de `misp-wireshark.lua`. Cette licence
+n'existe pas (l'AGPL commence à la version 3). Sur décision de Mathilde
+(01/11/2026), les trois fichiers du plugin sont distribués en **GPL-2.0-only** :
+texte dans `LICENSE.GPL-2.0.md`. Le fichier `LICENSE` de ce dossier est celui
+de LuaMISP (MIT, copie conforme de l'amont).
 
 ## Fichiers
 
 | Fichier | Licence | Rôle |
 |---|---|---|
-| `misp-wireshark.lua` | non établie (« AGPLv2 » déclarée dans ses métadonnées) | point d'entrée : menus Wireshark, options (filtre, charges HTTP, chemin d'export, tags), export JSON |
-| `mispHelper.lua` | non établie (aucune mention) | construction des objets MISP (`network-connection`, `http-request`, `dns-record`) |
-| `mispWiresharkUtils.lua` | non établie (aucune mention) | utilitaires : copie profonde, sauvegarde de fichier |
+| `misp-wireshark.lua` | GPL-2.0-only (« AGPLv2 » déclarée, #9) | point d'entrée : menus Wireshark, options (filtre, charges HTTP, chemin d'export, tags), export JSON |
+| `mispHelper.lua` | GPL-2.0-only (#9) | construction des objets MISP (`network-connection`, `http-request`, `dns-record`) |
+| `mispWiresharkUtils.lua` | GPL-2.0-only (#9) | utilitaires : copie profonde, sauvegarde de fichier |
 | `lib/LuaMISP/LuaMISP.lua` | MIT | bibliothèque de création d'entités MISP (Event, Object, Attribute, Tag, ObjectReference) |
 | `lib/LuaMISP/utils.lua` | MIT | agrégation des utilitaires (JSON, UUID, base64) |
 | `lib/LuaMISP/test.lua` | MIT | test amont de la bibliothèque |

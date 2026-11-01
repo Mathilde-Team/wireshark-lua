@@ -1,8 +1,8 @@
+-- SPDX-License-Identifier: GPL-2.0-only
 -- Importé de https://github.com/MISP/misp-wireshark,
 -- commit be6d89df62503465d9b92e6839612111ea8fc068 du 23/10/2023 (branche `main`).
--- Licence amont : non établie — `misp-wireshark.lua` déclare « AGPLv2 » dans ses
--- métadonnées (`set_plugin_info`), l'amont ne fournit pas de fichier LICENSE ni
--- de déclaration couvrant ce fichier — voir README.md.
+-- Licence : GPL-2.0-only, décision de Mathilde du 01/11/2026 (#9) : l'amont déclare « AGPLv2 »,
+-- licence qui n'existe pas, interprétée comme GPL-2.0 seule — voir README.md.
 
 local my_info = {
     version = "1.0",
