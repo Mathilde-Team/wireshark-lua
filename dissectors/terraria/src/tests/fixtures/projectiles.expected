@@ -1,0 +1,46 @@
+1	Terraria SyncProjectile id=27 len=39
+2	Terraria DamageNPC id=28 len=13
+3	Terraria KillProjectile id=29 len=15
+Terraria SyncProjectile
+    Frame Length: 39
+    Packet ID: SyncProjectile (27)
+    Payload
+        Projectile Update: 021114000000804200000043000080400000000001001d010000803f2a000900000000bf
+            Projectile Key: 0x00141102
+                .... .... .... .... .... .... 0000 0010 = Owner: 2
+                .... .... .... ..00 0001 0001 .... .... = Index: 17
+                0000 0000 0001 01.. .... .... .... .... = Generation: 5
+            Position: 0000804200000043
+                Position X: 64
+                Position Y: 128
+            Velocity: 0000804000000000
+                Velocity X: 4
+                Velocity Y: 0
+            Type: 1
+            Projectile Flags: 0x1d
+            Projectile Flags 2: 0x01
+            AI 0: 1
+            Banner ID To Respond To: 42
+            Damage: 9
+            AI 2: -0.5
+Terraria DamageNPC
+    Frame Length: 13
+    Packet ID: DamageNPC (28)
+    Payload
+        NPC Index: 7
+        Generation: 3
+        Damage: 25
+        Knockback: 4.5
+        Hit Direction: Right (2)
+        Crit: True
+Terraria KillProjectile
+    Frame Length: 15
+    Packet ID: KillProjectile (29)
+    Payload
+        Projectile Key: 0x00141102
+            .... .... .... .... .... .... 0000 0010 = Owner: 2
+            .... .... .... ..00 0001 0001 .... .... = Index: 17
+            0000 0000 0001 01.. .... .... .... .... = Generation: 5
+        Position: 00008c4200000043
+            Position X: 70
+            Position Y: 128

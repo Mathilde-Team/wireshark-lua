@@ -1,0 +1,5 @@
+# SyncProjectile (27) with a second flag byte, banner, damage and ai[2]; DamageNPC (28);
+# KillProjectile (29) with the same packed key (owner 2, index 17, generation 5)
+0000 27 00 1b 02 11 14 00 00 00 80 42 00 00 00 43 00 00 80 40 00 00 00 00 01 00 1d 01 00 00 80 3f 2a 00 09 00 00 00 00 bf
+0000 0d 00 1c 07 03 19 00 00 00 90 40 02 01
+0000 0f 00 1d 02 11 14 00 00 00 8c 42 00 00 00 43

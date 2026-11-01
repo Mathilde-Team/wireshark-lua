@@ -1,0 +1,4 @@
+# Kick (2) with a localization key whose first substitution is itself formattable, and a
+# StatusTextSize (9) carrying a literal
+0000 34 00 02 02 14 4c 65 67 61 63 79 4d 75 6c 74 69 70 6c 61 79 65 72 2e 31 39 02 01 0b 7b 30 7d 20 61 6e 64 20 7b 31 7d 01 00 03 42 6f 62 00 05 41 6c 69 63 65
+0000 1d 00 09 0f 00 00 00 00 13 52 65 63 65 69 76 69 6e 67 20 74 69 6c 65 20 64 61 74 61 00

@@ -1,0 +1,53 @@
+-- SPDX-License-Identifier: LicenseRef-FKIE-MIT-supplemented
+-- Importé de https://github.com/fkie-cad/maritime-dissector,
+-- commit 8fdd466580ef6279971a9090c542284ea7959869 du 24/03/2026 (maritime-modules/binarystream.lua).
+-- Licence amont : MIT complétée par Fraunhofer FKIE (LICENSE amont) — voir README.md.
+
+-- prevent wireshark loading this file as plugin
+if not _G['maritimedissector'] then return end
+
+-- Global table of packets for reassembly
+IEC_61162_450_PKTS = {}
+
+local binarystream = {}
+
+function binarystream:get_binary_stream(buffer, pinfo)
+    local msgtype = buffer(22,2):uint()
+    local first_pack = nil
+    local prev_pack = nil
+    local next_pack = nil
+
+    if msgtype == 1 then
+        local sourceid = buffer(10,6):string()
+        local blockid = buffer(24,4):uint()
+        local seqnum = buffer(28, 4):uint()
+        local maxseqnum = buffer(32,4):uint()
+
+        if IEC_61162_450_PKTS[sourceid] == nil then
+            IEC_61162_450_PKTS[sourceid] = {}
+            IEC_61162_450_PKTS[sourceid][blockid] = {}
+            IEC_61162_450_PKTS[sourceid][blockid][seqnum] = pinfo.number
+        else
+            if IEC_61162_450_PKTS[sourceid][blockid] == nil then
+                IEC_61162_450_PKTS[sourceid][blockid] = {}
+                IEC_61162_450_PKTS[sourceid][blockid][seqnum] = pinfo.number
+            else
+                if IEC_61162_450_PKTS[sourceid][blockid][seqnum] == nil then
+                    IEC_61162_450_PKTS[sourceid][blockid][seqnum] = pinfo.number
+                end
+            end
+        end
+        if seqnum > 1 then
+            first_pack = IEC_61162_450_PKTS[sourceid][blockid][1]
+            prev_pack = IEC_61162_450_PKTS[sourceid][blockid][seqnum-1]
+        end
+        if maxseqnum > 1 then
+            if seqnum ~= maxseqnum then
+                next_pack = IEC_61162_450_PKTS[sourceid][blockid][seqnum+1]
+            end
+        end
+    end
+    return first_pack, prev_pack, next_pack
+end
+
+return binarystream

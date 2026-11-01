@@ -1,0 +1,179 @@
+1	Terraria WorldData id=7 len=179
+Terraria WorldData
+    Frame Length: 179
+    Packet ID: WorldData (7)
+    Payload
+        Time State: 786900000103
+            Time: 27000
+            Day and Moon Info: 0x01
+                .... ...1 = Day Time: True
+                .... ..0. = Blood Moon: False
+                .... .0.. = Eclipse: False
+            Moon Phase: 3
+        Geometry: 6810b00434082c015e01f401
+            Max Tiles X: 4200
+            Max Tiles Y: 1200
+            Spawn X: 2100
+            Spawn Y: 300
+            World Surface: 350
+            Rock Layer: 500
+        Identity: 40e2010008546573746c616e6401000102030405060708090a0b0c0d0e0f010000001701000000
+            World ID: 123456
+            World Name: Testland
+            Game Mode: Expert (1)
+            World Unique ID: 03020100-0504-0706-0809-0a0b0c0d0e0f
+            World Generator Version: 1198295875585
+            Moon Type: 0
+        Backgrounds: 000102030405060708090a0b0c0102030000803e28
+            Background Style 0: 0
+            Background Style 10: 1
+            Background Style 11: 2
+            Background Style 12: 3
+            Background Style 1: 4
+            Background Style 2: 5
+            Background Style 3: 6
+            Background Style 4: 7
+            Background Style 5: 8
+            Background Style 6: 9
+            Background Style 7: 10
+            Background Style 8: 11
+            Background Style 9: 12
+            Ice Back Style: 1
+            Jungle Back Style: 2
+            Hell Back Style: 3
+            Wind Speed Target: 0.25
+            Cloud Number: 40
+        Tree Layout: e8030000d00700006810000000010203dc050000b80b00006810000004050607
+            Tree X 1: 1000
+            Tree X 2: 2000
+            Tree X 3: 4200
+            Tree Style 1: 0
+            Tree Style 2: 1
+            Tree Style 3: 2
+            Tree Style 4: 3
+            Cave Back X 1: 1500
+            Cave Back X 2: 3000
+            Cave Back X 3: 4200
+            Cave Back Style 1: 4
+            Cave Back Style 2: 5
+            Cave Back Style 3: 6
+            Cave Back Style 4: 7
+        Tree Tops: 000102030405060708090a0b0c
+            Tree Top Style 1: 0
+            Tree Top Style 2: 1
+            Tree Top Style 3: 2
+            Tree Top Style 4: 3
+            Tree Top Style 5: 4
+            Tree Top Style 6: 5
+            Tree Top Style 7: 6
+            Tree Top Style 8: 7
+            Tree Top Style 9: 8
+            Tree Top Style 10: 9
+            Tree Top Style 11: 10
+            Tree Top Style 12: 11
+            Tree Top Style 13: 12
+        Events: 0000000002200880000000002200010005
+            Max Raining: 0
+            World Flags: 0220088000000000220001
+                World Flags 1: 0x02
+                    .... ...0 = Shadow Orb Smashed: False
+                    .... ..1. = Downed Boss1: True
+                    .... .0.. = Downed Boss2: False
+                    .... 0... = Downed Boss3: False
+                    ...0 .... = Hard Mode: False
+                    ..0. .... = Downed Clown: False
+                    .0.. .... = Server Side Character: False
+                    0... .... = Downed Plantera: False
+                World Flags 2: 0x20
+                    .... ...0 = Downed Mech1: False
+                    .... ..0. = Downed Mech2: False
+                    .... .0.. = Downed Mech3: False
+                    .... 0... = Downed Mech Any: False
+                    ...0 .... = Cloud Background: False
+                    ..1. .... = Crimson: True
+                    .0.. .... = Pumpkin Moon: False
+                    0... .... = Snow Moon: False
+                World Flags 3: 0x08
+                    .... ..0. = Fast Forward To Dawn: False
+                    .... .0.. = Slime Rain: False
+                    .... 1... = Downed King Slime: True
+                    ...0 .... = Downed Queen Bee: False
+                    ..0. .... = Downed Fishron: False
+                    .0.. .... = Downed Martians: False
+                    0... .... = Downed Ancient Cultist: False
+                World Flags 4: 0x80
+                    .... ...0 = Downed Moon Lord: False
+                    .... ..0. = Downed Halloween King: False
+                    .... .0.. = Downed Halloween Tree: False
+                    .... 0... = Downed Christmas Ice Queen: False
+                    ...0 .... = Downed Christmas Santank: False
+                    ..0. .... = Downed Christmas Tree: False
+                    .0.. .... = Downed Golem: False
+                    1... .... = Party Is Up: True
+                World Flags 5: 0x00
+                    .... ...0 = Downed Pirates: False
+                    .... ..0. = Downed Frost Legion: False
+                    .... .0.. = Downed Goblins: False
+                    .... 0... = Sandstorm: False
+                    ...0 .... = Army Ongoing: False
+                    ..0. .... = Downed Army Tier1: False
+                    .0.. .... = Downed Army Tier2: False
+                    0... .... = Downed Army Tier3: False
+                World Flags 6: 0x00
+                    .... ...0 = Combat Book Used: False
+                    .... ..0. = Lantern Night: False
+                    .... .0.. = Downed Tower Solar: False
+                    .... 0... = Downed Tower Vortex: False
+                    ...0 .... = Downed Tower Nebula: False
+                    ..0. .... = Downed Tower Stardust: False
+                    .0.. .... = Halloween Today: False
+                    0... .... = Christmas Today: False
+                World Flags 7: 0x00
+                    .... ...0 = Bought Cat: False
+                    .... ..0. = Bought Dog: False
+                    .... .0.. = Bought Bunny: False
+                    .... 0... = Free Cake: False
+                    ...0 .... = Drunk World: False
+                    ..0. .... = Downed Empress Of Light: False
+                    .0.. .... = Downed Queen Slime: False
+                    0... .... = Get Good World: False
+                World Flags 8: 0x00
+                    .... ...0 = Tenth Anniversary: False
+                    .... ..0. = Dont Starve: False
+                    .... .0.. = Downed Deerclops: False
+                    .... 0... = Not The Bees: False
+                    ...0 .... = Remix World: False
+                    ..0. .... = Unlocked Slime Blue Spawn: False
+                    .0.. .... = Combat Book Two Used: False
+                World Flags 9: 0x22
+                    .... ...0 = Unlocked Slime Green Spawn: False
+                    .... ..1. = Unlocked Slime Old Spawn: True
+                    .... .0.. = Unlocked Slime Purple Spawn: False
+                    .... 0... = Unlocked Slime Rainbow Spawn: False
+                    ...0 .... = Unlocked Slime Red Spawn: False
+                    ..1. .... = Unlocked Slime Yellow Spawn: True
+                    .0.. .... = Unlocked Slime Copper Spawn: False
+                    0... .... = Fast Forward To Dusk: False
+                World Flags 10: 0x00
+                World Flags 11: 0x01
+            Sundial Cooldown: 0
+            Moondial Cooldown: 5
+        Ore Tiers: 0700060009000800ffffffffffff
+            Copper Ore Tier: 7
+            Iron Ore Tier: 6
+            Silver Ore Tier: 9
+            Gold Ore Tier: 8
+            Cobalt Ore Tier: -1
+            Mythril Ore Tier: -1
+            Adamantite Ore Tier: -1
+        Invasion Type: 0
+        Lobby ID: 0
+        Sandstorm Severity: 0
+        Extra Spawn Points: 016400c800
+            Extra Spawn Point Count: 1
+            Extra Spawn Point: 6400c800
+                X: 100
+                Y: 200
+        Dungeon Position: 550d9001
+            Dungeon X: 3413
+            Dungeon Y: 400

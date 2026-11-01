@@ -1,0 +1,15 @@
+1	Terraria PlayerSpawn id=12 len=18
+Terraria PlayerSpawn
+    Frame Length: 18
+    Packet ID: PlayerSpawn (12)
+    Payload
+        Player ID: 2
+        Spawn Position: 34082c01
+            Spawn X: 2100
+            Spawn Y: 300
+        Spawn State: 00000000040001000301
+            Respawn Time Remaining: 0
+            PvE Deaths: 4
+            PvP Deaths: 1
+            Team: 3
+            Player Spawn Context: SpawningIntoWorld (1)

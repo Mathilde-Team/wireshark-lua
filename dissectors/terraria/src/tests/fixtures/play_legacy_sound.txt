@@ -1,0 +1,2 @@
+# PlayLegacySound (132): flags 0x07 carry style, volume 1.0 and pitch 0.5
+0000 1a 00 84 00 00 00 00 00 00 00 00 01 00 07 02 00 00 00 00 00 80 3f 00 00 00 3f

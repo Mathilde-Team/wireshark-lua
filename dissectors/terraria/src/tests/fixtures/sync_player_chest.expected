@@ -1,0 +1,23 @@
+1	Terraria SyncPlayerChest id=33 len=14
+2	Terraria SyncPlayerChest id=33 len=10
+Terraria SyncPlayerChest
+    Frame Length: 14
+    Packet ID: SyncPlayerChest (33)
+    Payload
+        Active Chest: 01000a000b000303426f78
+            Chest ID: 1
+            Chest Position: 0a000b00
+                Chest X: 10
+                Chest Y: 11
+            Name Length: 3
+            Chest Name: Box
+Terraria SyncPlayerChest
+    Frame Length: 10
+    Packet ID: SyncPlayerChest (33)
+    Payload
+        Active Chest: ffff0000000000
+            Chest ID: -1
+            Chest Position: 00000000
+                Chest X: 0
+                Chest Y: 0
+            Name Length: 0
