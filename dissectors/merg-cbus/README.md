@@ -5,7 +5,7 @@ Electronic Railway Group, réseaux ferroviaires miniatures), dans sa forme
 texte « GridConnect » transportée sur TCP (port 5550 par défaut,
 modifiable dans les préférences) : trames `:S<id>N<opcode><données>;`,
 identifiant CAN décomposé (priorités majeure et mineure, CAN ID) et opcode
-nommé (plus de 150 opcodes CBUS).
+nommé (130 opcodes CBUS).
 
 ## Import
 
