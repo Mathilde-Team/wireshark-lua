@@ -42,7 +42,7 @@ Filtres : `slmp`, `slmp.flags`, `slmp.eom`, `slmp.syn`, `slmp.ack`,
 
 **Sous Wireshark 4.x** : le script utilise `bit32`, absent de la Lua 5.4
 des Wireshark récents ; sans contournement il **ne se charge pas**
-(« attempt to index a nil value (global 'bit32') », ligne 6). Contournement
+(« attempt to index a nil value (global 'bit32') », ligne 11 de `src/slmp.lua`, 6 en amont). Contournement
 sans modifier le script : un fichier chargé avant lui (par exemple
 `00_bit32.lua` dans le même dossier) contenant
 
