@@ -1,9 +1,8 @@
 # TIN-AAA — protocole maison d'un mandataire pour réseau de capteurs
 
 Dissecteur Wireshark Lua du **protocole « AAA » du projet étudiant TINs**
-(mandataire HTTP pour un réseau de capteurs simulé, Université
-technologique de Varsovie, 2021) : en-tête de 2 octets — type de paquet
-(DATA, ACK, ERROR, sur les 2 bits de poids fort), numéro de paquet (ou
+(mandataire HTTP pour un réseau de capteurs simulé, 2021) : en-tête de
+2 octets — type de paquet (DATA, ACK, ERROR, sur les 2 bits de poids fort), numéro de paquet (ou
 code d'erreur : mauvais type, mauvaise session, mauvais compteur) et
 identifiant de session — puis charge utile texte. Port UDP 3000.
 
