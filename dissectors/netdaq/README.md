@@ -51,7 +51,7 @@ d'encodage de la bibliothèque amont (`netdaq/utils/encoding.py` :
 | `SET_CONFIG` (2 508 octets sur 2 segments TCP) | réassemblé ; bloc de configuration : drapeaux, intervalles `00:00:02.500` et `00:01:00.000`, voie 1 (mode, calibre, bits), voies 2 à 30 « disabled » |
 | `ERROR` code `0x1234` | `CMD=0xFFFFFFFF (ERROR):0x1234` |
 | `GET_CONFIG` (requête vide) → réponse de 2 492 octets | requête marquée « unexpected payload length ! » ; réponse brute |
-| commande `0x6B` (absente de la table) | erreur Lua « attempt to index a nil value » (ligne 172) |
+| commande `0x6B` (absente de la table) | erreur Lua « attempt to index a nil value » (ligne 177 de `src/netdaq.lua`, 172 en amont) |
 
 ## Limites constatées
 
