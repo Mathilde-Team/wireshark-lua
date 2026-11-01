@@ -2,6 +2,8 @@
 -- Importé de https://github.com/ta-forever/gpgnet4ta (libs/tapacket/tadissector.lua),
 -- commit 72d9d419731b73eef94e50c1e1a53eb54753f48e du 26/07/2026 (branche develop).
 -- Licence amont : MIT (LICENSE amont, « Copyright (c) 2021 Alex Lowe ») — voir README.md.
+-- Correction locale (syntaxe invalide en amont, le fichier ne charge pas) :
+-- virgule ajoutée après [9] = "ENUM" (ligne 25).
 -- trivial protocol example
 -- declare our protocol
 tafnet_proto = Proto("tafnet","TAFNet Protocol")
@@ -22,7 +24,7 @@ local get_action_name =
   [6] = "TCP_ACK",
   [7] = "TCP_RESEND",
   [8] = "TCP_SEQ_REBASE",
-  [9] = "ENUM"
+  [9] = "ENUM",
   [10] = "UDP_PROTECTED",
   [11] = "PACKSIZE_TEST",
   [12] = "PACKSIZE_ACK",

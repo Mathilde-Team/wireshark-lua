@@ -22,6 +22,14 @@ Texte complet de la licence amont : fichier `LICENSE` de ce dossier
 |---|---|
 | `tadissector.lua` | Dissecteur TAFNet (action, séquence, données ; UDP 6112) |
 
+## Écart par rapport à l'amont
+
+Le fichier amont ne compile pas : virgule manquante après `[9] = "ENUM"` dans
+`get_action_name` (erreur de syntaxe Lua — Wireshark refuserait de charger le
+script). Une correction locale minimale est appliquée (virgule ajoutée,
+documentée dans l'en-tête du fichier) ; le reste du fichier est importé tel
+quel.
+
 ## Utilisation
 
 Copier `tadissector.lua` dans le dossier `plugins` de Wireshark
