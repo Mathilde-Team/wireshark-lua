@@ -1,3 +1,7 @@
+-- SPDX-License-Identifier: MPL-2.0
+-- Importé de https://gitlab.com/SuperTeece/veilid-wireshark-dissector (veilid/chacha.lua),
+-- commit a0a4eb3734df36d78969e831c2b8f4ad00e1930f du 06/08/2026. Code amont non modifié.
+
 -- This Source Code Form is subject to the terms of the Mozilla Public
 -- License, v. 2.0. If a copy of the MPL was not distributed with this
 -- file, You can obtain one at https://mozilla.org/MPL/2.0/.

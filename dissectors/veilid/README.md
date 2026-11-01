@@ -16,7 +16,7 @@ secrets partagés.
 | Licence amont | MPL-2.0 (`LICENSE` amont, en-tête `SPDX-License-Identifier: MPL-2.0` dans chaque fichier) |
 | Natif Wireshark 4.6.4 | Non |
 
-Les fichiers sont repris sans aucune modification ; ils portent déjà leur en-tête SPDX.
+Les fichiers sont repris sans modification ; seule une en-tête SPDX et de provenance a été ajoutée (convention #563).
 
 ## Fichiers
 
